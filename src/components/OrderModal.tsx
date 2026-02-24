@@ -56,7 +56,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: name === 'count' ? Number(value) : value, // تحويل count تلقائيًا
+      [name]: value,
     }));
   };
 
@@ -67,24 +67,34 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
           ×
         </button>
         <div className="modal-content">
-          <h2 className="modal-title">Order {product.name}</h2>
+          <img
+            src={product.image}
+            alt={product.name}
+            className="modal-product-image"
+          />
+          <div className="modal-header">
+            <h2 className="modal-title">{product.name}</h2>
+            <div className="modal-price">${product.price}</div>
+          </div>
+          <p className="modal-description">{product.description}</p>
 
           {success && (
             <div className="success-message">
-              Order submitted successfully! We'll contact you soon.
+              تم إرسال طلبك بنجاح! سنتواصل معك قريباً.
             </div>
           )}
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="form-label" htmlFor="name">
-                Full Name *
+                الاسم الكامل *
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 className="form-input"
+                placeholder="أدخل اسمك الكامل"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -94,13 +104,14 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="number">
-                Phone Number *
+                رقم الهاتف *
               </label>
               <input
                 type="tel"
                 id="number"
                 name="number"
                 className="form-input"
+                placeholder="أدخل رقم هاتفك"
                 value={formData.number}
                 onChange={handleChange}
                 required
@@ -110,12 +121,13 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="adres">
-                Delivery Address *
+                عنوان التوصيل *
               </label>
               <textarea
                 id="adres"
                 name="adres"
                 className="form-textarea"
+                placeholder="أدخل عنوانك بالتفصيل"
                 value={formData.adres}
                 onChange={handleChange}
                 required
@@ -125,7 +137,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="count">
-                Quantity *
+                الكمية *
               </label>
               <input
                 type="number"
@@ -142,7 +154,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="delivery_date">
-                Preferred Delivery Date *
+                تاريخ التوصيل المفضل *
               </label>
               <input
                 type="date"
@@ -162,7 +174,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
               className="btn"
               disabled={loading || success}
             >
-              {loading ? 'Submitting...' : success ? 'Order Submitted!' : 'Place Order'}
+              {loading ? 'جاري الإرسال...' : success ? 'تم الإرسال!' : 'اطلب الآن'}
             </button>
           </form>
         </div>
