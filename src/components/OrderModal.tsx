@@ -15,18 +15,24 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     count: '1',
     delivery_date: '',
   });
+
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  // إرسال الأوردر
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     try {
+      // إنشاء object للأوردر مع النوع الصحيح
       const orderData: Order = {
         ...formData,
         type: product.name,
       };
+
+      // تأكد أن count رقم
+      orderData.count = Number(orderData.count);
 
       const { error } = await supabase
         .from('orders')
@@ -47,10 +53,11 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: name === 'count' ? Number(value) : value, // تحويل count تلقائيًا
+    }));
   };
 
   return (
@@ -127,7 +134,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
                 className="form-input"
                 value={formData.count}
                 onChange={handleChange}
-                min="1"
+                min={1}
                 required
                 disabled={loading || success}
               />
