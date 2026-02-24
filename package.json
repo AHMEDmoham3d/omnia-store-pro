@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "npx webpack --mode production"
+    "build": "node node_modules/webpack/bin/webpack.js --mode production"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.97.0",
