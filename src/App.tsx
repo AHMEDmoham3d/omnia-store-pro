@@ -50,7 +50,6 @@ function App() {
               <a href="#oils">Oils</a>
               <a href="#cards">Cards</a>
               <a href="#carpets">Carpets</a>
-              <Link to="/admin">Admin</Link>
             </nav>
           </div>
         </header>
@@ -64,7 +63,7 @@ function App() {
 
         <footer className="footer">
           <div className="footer-content">
-            <p>&copy; 2024 Spiritual Store. All rights reserved.</p>
+            <p>&copy; 2024 Beyond Holistic. All rights reserved.</p>
             <p>Premium spiritual products for your sacred journey</p>
           </div>
         </footer>
