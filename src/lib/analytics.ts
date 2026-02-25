@@ -3,7 +3,13 @@ import { VisitorAnalytics } from '../types';
 
 let sessionStartTime = Date.now();
 
+// نعرف هل احنا في production ولا لأ
+const isProduction = import.meta.env.PROD === true;
+
 export const trackPageView = async (section: string) => {
+  // ❌ اقفل analytics تمامًا في production
+  if (isProduction) return;
+
   try {
     const analyticsData: VisitorAnalytics = {
       section_viewed: section,
@@ -16,14 +22,16 @@ export const trackPageView = async (section: string) => {
       .insert([analyticsData]);
 
     if (error) {
-      console.error('Error tracking page view:', error);
+      console.warn('Analytics insert failed (ignored):', error);
     }
   } catch (err) {
-    console.error('Error tracking page view:', err);
+    console.warn('Analytics error (ignored):', err);
   }
 };
 
 export const initAnalytics = () => {
+  if (isProduction) return;
+
   sessionStartTime = Date.now();
   trackPageView('home');
 };
