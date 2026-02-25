@@ -54,7 +54,7 @@ export const products: Product[] = [
     name: 'Mystic Patchouli Oil',
     description: 'Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma.',
     price: 29.99,
-    image: 'زيت3.jpg',
+    image: 'زيت3.webp',
     category: 'oils',
   },
   {
