@@ -4,7 +4,7 @@ import { VisitorAnalytics } from '../types';
 let sessionStartTime = Date.now();
 
 // نعرف هل احنا في production ولا لأ
-const isProduction = import.meta.env.PROD === true;
+const isProduction = (import.meta as any).env.PROD === true;
 
 export const trackPageView = async (section: string) => {
   // ❌ اقفل analytics تمامًا في production
