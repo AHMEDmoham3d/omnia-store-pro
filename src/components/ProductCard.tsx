@@ -22,7 +22,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
         <div className="product-footer">
           <div className="product-price">${product.price}</div>
           <button className="product-btn" onClick={onClick}>
-            اطلب الآن
+           Order now
           </button>
         </div>
       </div>
