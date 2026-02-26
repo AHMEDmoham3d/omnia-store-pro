@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -33,7 +34,7 @@ module.exports = (env, argv) => {
             options: {
               presets: [
                 '@babel/preset-react',
-                '@babel/preset-typescript'
+                '@babel/preset-typescript',
               ],
             },
           },
@@ -43,7 +44,7 @@ module.exports = (env, argv) => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
           type: 'asset/resource',
         },
       ],
@@ -53,6 +54,19 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: './public/index.html',
         inject: 'body',
+      }),
+
+      // 🔥 ده الجزء اللي بيحل مشكلة الصور نهائيًا
+      new CopyPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, 'public'),
+            to: path.resolve(__dirname, 'dist'),
+            globOptions: {
+              ignore: ['**/index.html'], // علشان منكررش index
+            },
+          },
+        ],
       }),
 
       new webpack.DefinePlugin({
@@ -73,6 +87,9 @@ module.exports = (env, argv) => {
       port: 3000,
       hot: true,
       open: true,
+      static: {
+        directory: path.join(__dirname, 'public'),
+      },
     },
   };
 };
