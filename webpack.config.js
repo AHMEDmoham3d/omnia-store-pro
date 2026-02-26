@@ -59,6 +59,9 @@ module.exports = (env, argv) => {
         'process.env.NODE_ENV': JSON.stringify(
           isProduction ? 'production' : 'development'
         ),
+
+        'process.env.SUPABASE_URL': JSON.stringify(process.env.SUPABASE_URL),
+        'process.env.SUPABASE_ANON_KEY': JSON.stringify(process.env.SUPABASE_ANON_KEY),
       }),
     ],
 
