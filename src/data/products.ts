@@ -1,6 +1,8 @@
 import { Product } from '../types';
 
-// كل الصور اتحولت لمسار نسبي يبدأ من public
+// استخدم window.location.origin لضمان مسار كامل على الاستضافة
+const basePath = window.location.origin;
+
 export const products: Product[] = [
   {
     id: 'incense-1',
@@ -8,7 +10,7 @@ export const products: Product[] = [
     description:
       'Premium frankincense resin for spiritual cleansing and meditation. Hand-selected from the finest sources.',
     price: 24.99,
-    image: '/بخور1.jpg',
+    image: `${basePath}/بخور1.jpg`,
     category: 'incense',
   },
   {
@@ -17,7 +19,7 @@ export const products: Product[] = [
     description:
       'Pure sandalwood incense sticks for relaxation and spiritual practices. Creates a calming atmosphere.',
     price: 19.99,
-    image: '/بخور2.jpg',
+    image: `${basePath}/بخور2.jpg`,
     category: 'incense',
   },
   {
@@ -26,7 +28,7 @@ export const products: Product[] = [
     description:
       'Powerful protection incense made from natural resin. Perfect for rituals and energy work.',
     price: 22.99,
-    image: '/بخور3.jpg',
+    image: `${basePath}/بخور3.jpg`,
     category: 'incense',
   },
   {
@@ -35,7 +37,7 @@ export const products: Product[] = [
     description:
       'Pure rose essential oil for love and healing rituals. Premium quality with divine fragrance.',
     price: 34.99,
-    image: '/زيت1.jpg',
+    image: `${basePath}/زيت1.jpg`,
     category: 'oils',
   },
   {
@@ -44,7 +46,7 @@ export const products: Product[] = [
     description:
       'Calming lavender oil for meditation and relaxation. 100% natural and therapeutic grade.',
     price: 28.99,
-    image: '/زيت2.jpg',
+    image: `${basePath}/زيت2.jpg`,
     category: 'oils',
   },
   {
@@ -53,7 +55,7 @@ export const products: Product[] = [
     description:
       'Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma.',
     price: 29.99,
-    image: '/زيت3.webp',
+    image: `${basePath}/زيت3.webp`,
     category: 'oils',
   },
   {
@@ -62,7 +64,7 @@ export const products: Product[] = [
     description:
       'Beautiful angel oracle cards for divine guidance. 44 cards with guidebook included.',
     price: 32.99,
-    image: '/كرت1.webp',
+    image: `${basePath}/كرت1.webp`,
     category: 'cards',
   },
   {
@@ -71,7 +73,7 @@ export const products: Product[] = [
     description:
       'Mystical tarot-style cards for spiritual insight and meditation. Gold-gilded edges.',
     price: 38.99,
-    image: '/كرت2.webp',
+    image: `${basePath}/كرت2.webp`,
     category: 'cards',
   },
   {
@@ -80,7 +82,7 @@ export const products: Product[] = [
     description:
       'Energy healing cards focused on chakra balance and alignment. Vibrant artwork.',
     price: 29.99,
-    image: '/كرت3.webp',
+    image: `${basePath}/كرت3.webp`,
     category: 'cards',
   },
   {
@@ -89,7 +91,7 @@ export const products: Product[] = [
     description:
       'Luxurious prayer rug with sacred geometry patterns. Soft, comfortable, and spiritually designed.',
     price: 89.99,
-    image: '/سجاد1.jpg',
+    image: `${basePath}/سجاد1.jpg`,
     category: 'carpets',
   },
   {
@@ -98,7 +100,7 @@ export const products: Product[] = [
     description:
       'Beautiful mandala design carpet for yoga and meditation practices. Non-slip backing.',
     price: 79.99,
-    image: '/سجاد2.jpg',
+    image: `${basePath}/سجاد2.jpg`,
     category: 'carpets',
   },
   {
@@ -107,7 +109,7 @@ export const products: Product[] = [
     description:
       'Elegant lotus design for spiritual practice. High-quality materials with intricate embroidery.',
     price: 94.99,
-    image: '/سجاد3.jpg',
+    image: `${basePath}/سجاد3.jpg`,
     category: 'carpets',
   },
 ];
