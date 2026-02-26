@@ -80,21 +80,21 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
           {success && (
             <div className="success-message">
-              تم إرسال طلبك بنجاح! سنتواصل معك قريباً.
+             Your request has been successfully submitted! We will contact you soon.
             </div>
           )}
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="form-label" htmlFor="name">
-                الاسم الكامل *
+                Full name  *
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 className="form-input"
-                placeholder="أدخل اسمك الكامل"
+                placeholder="Enter your full name"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -104,14 +104,14 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="number">
-                رقم الهاتف *
+                Phone number  *
               </label>
               <input
                 type="tel"
                 id="number"
                 name="number"
                 className="form-input"
-                placeholder="أدخل رقم هاتفك"
+                placeholder="Enter your phone number"
                 value={formData.number}
                 onChange={handleChange}
                 required
@@ -125,9 +125,9 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
               </label>
               <textarea
                 id="adres"
-                name="adres"
+                name="address in detail"
                 className="form-textarea"
-                placeholder="أدخل عنوانك بالتفصيل"
+                placeholder="Enter your delivery address in detail"
                 value={formData.adres}
                 onChange={handleChange}
                 required
@@ -137,7 +137,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="count">
-                الكمية *
+                Quantity *
               </label>
               <input
                 type="number"
@@ -154,7 +154,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="delivery_date">
-                تاريخ التوصيل المفضل *
+               Preferred delivery date*
               </label>
               <input
                 type="date"
@@ -174,7 +174,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
               className="btn"
               disabled={loading || success}
             >
-              {loading ? 'جاري الإرسال...' : success ? 'تم الإرسال!' : 'اطلب الآن'}
+              {loading ? 'Sending....' : success ? 'Sent!' : 'Order now'}
             </button>
           </form>
         </div>
