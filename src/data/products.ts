@@ -1,133 +1,113 @@
 import { Product } from '../types';
 
+// كل الصور اتحولت لمسار نسبي يبدأ من public
 export const products: Product[] = [
   {
     id: 'incense-1',
     name: 'Sacred Frankincense',
-    description: 'Premium frankincense resin for spiritual cleansing and meditation. Hand-selected from the finest sources.',
+    description:
+      'Premium frankincense resin for spiritual cleansing and meditation. Hand-selected from the finest sources.',
     price: 24.99,
-    // image: 'بخور1.jpg',
-    image: 'public/بخور1.jpg',
+    image: '/بخور1.jpg',
     category: 'incense',
   },
   {
     id: 'incense-2',
     name: 'Mystical Sandalwood',
-    description: 'Pure sandalwood incense sticks for relaxation and spiritual practices. Creates a calming atmosphere.',
+    description:
+      'Pure sandalwood incense sticks for relaxation and spiritual practices. Creates a calming atmosphere.',
     price: 19.99,
-    image: 'بخور2.jpg',
+    image: '/بخور2.jpg',
     category: 'incense',
   },
   {
     id: 'incense-3',
     name: 'Dragon Blood Incense',
-    description: 'Powerful protection incense made from natural resin. Perfect for rituals and energy work.',
+    description:
+      'Powerful protection incense made from natural resin. Perfect for rituals and energy work.',
     price: 22.99,
-    image: 'بخور3.jpg',
+    image: '/بخور3.jpg',
     category: 'incense',
   },
-  // {
-  //   id: 'incense-4',
-  //   name: 'White Sage Bundle',
-  //   description: 'Traditional white sage for cleansing negative energy. Ethically sourced and hand-tied.',
-  //   price: 16.99,
-  //   image: 'https://images.pexels.com/photos/8069196/pexels-photo-8069196.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //   category: 'incense',
-  // },
   {
     id: 'oils-1',
     name: 'Sacred Rose Oil',
-    description: 'Pure rose essential oil for love and healing rituals. Premium quality with divine fragrance.',
+    description:
+      'Pure rose essential oil for love and healing rituals. Premium quality with divine fragrance.',
     price: 34.99,
-    image: 'زيت1.jpg',
+    image: '/زيت1.jpg',
     category: 'oils',
   },
   {
     id: 'oils-2',
     name: 'Spiritual Lavender Oil',
-    description: 'Calming lavender oil for meditation and relaxation. 100% natural and therapeutic grade.',
+    description:
+      'Calming lavender oil for meditation and relaxation. 100% natural and therapeutic grade.',
     price: 28.99,
-    image: 'زيت2.jpg',
+    image: '/زيت2.jpg',
     category: 'oils',
   },
   {
     id: 'oils-3',
     name: 'Mystic Patchouli Oil',
-    description: 'Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma.',
+    description:
+      'Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma.',
     price: 29.99,
-    image: 'زيت3.webp',
+    image: '/زيت3.webp',
     category: 'oils',
   },
-  // {
-  //   id: 'oils-4',
-  //   name: 'Protection Blend Oil',
-  //   description: 'Custom blend of protective oils including myrrh and cedarwood. Shield yourself from negativity.',
-  //   price: 39.99,
-  //   image: 'https://images.pexels.com/photos/5797901/pexels-photo-5797901.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //   category: 'oils',
-  // },
   {
     id: 'cards-1',
     name: 'Angel Guidance Cards',
-    description: 'Beautiful angel oracle cards for divine guidance. 44 cards with guidebook included.',
+    description:
+      'Beautiful angel oracle cards for divine guidance. 44 cards with guidebook included.',
     price: 32.99,
-    image: 'كرت1.webp',
+    image: '/كرت1.webp',
     category: 'cards',
   },
   {
     id: 'cards-2',
     name: 'Spiritual Wisdom Deck',
-    description: 'Mystical tarot-style cards for spiritual insight and meditation. Gold-gilded edges.',
+    description:
+      'Mystical tarot-style cards for spiritual insight and meditation. Gold-gilded edges.',
     price: 38.99,
-    image: 'كرت2.webp',
+    image: '/كرت2.webp',
     category: 'cards',
   },
   {
     id: 'cards-3',
     name: 'Chakra Healing Cards',
-    description: 'Energy healing cards focused on chakra balance and alignment. Vibrant artwork.',
+    description:
+      'Energy healing cards focused on chakra balance and alignment. Vibrant artwork.',
     price: 29.99,
-    image: 'كرت3.webp',
+    image: '/كرت3.webp',
     category: 'cards',
   },
-  // {
-  //   id: 'cards-4',
-  //   name: 'Moon Phase Oracle',
-  //   description: 'Connect with lunar energy through this beautiful moon phase oracle deck. 36 cards.',
-  //   price: 34.99,
-  //   image: 'https://images.pexels.com/photos/8142027/pexels-photo-8142027.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //   category: 'cards',
-  // },
   {
     id: 'carpets-1',
     name: 'Meditation Prayer Rug',
-    description: 'Luxurious prayer rug with sacred geometry patterns. Soft, comfortable, and spiritually designed.',
+    description:
+      'Luxurious prayer rug with sacred geometry patterns. Soft, comfortable, and spiritually designed.',
     price: 89.99,
-    image: 'سجاد1.jpg',
+    image: '/سجاد1.jpg',
     category: 'carpets',
   },
   {
     id: 'carpets-2',
     name: 'Mandala Spiritual Mat',
-    description: 'Beautiful mandala design carpet for yoga and meditation practices. Non-slip backing.',
+    description:
+      'Beautiful mandala design carpet for yoga and meditation practices. Non-slip backing.',
     price: 79.99,
-    image: 'سجاد2.jpg',
+    image: '/سجاد2.jpg',
     category: 'carpets',
   },
   {
     id: 'carpets-3',
     name: 'Lotus Flower Prayer Carpet',
-    description: 'Elegant lotus design for spiritual practice. High-quality materials with intricate embroidery.',
+    description:
+      'Elegant lotus design for spiritual practice. High-quality materials with intricate embroidery.',
     price: 94.99,
-    image: 'سجاد3.jpg',
+    image: '/سجاد3.jpg',
     category: 'carpets',
   },
-  // {
-  //   id: 'carpets-4',
-  //   name: 'Sacred Space Mat',
-  //   description: 'Create your sacred space with this premium spiritual mat. Perfect for rituals and ceremonies.',
-  //   price: 99.99,
-  //   image: 'https://images.pexels.com/photos/6646643/pexels-photo-6646643.jpeg?auto=compress&cs=tinysrgb&w=800',
-  //   category: 'carpets',
-  // },
 ];
