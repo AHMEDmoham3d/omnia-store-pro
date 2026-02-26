@@ -63,7 +63,7 @@ function App() {
 
         <footer className="footer">
           <div className="footer-content">
-            <p>&copy; 2024 Beyond Holistic. All rights reserved.</p>
+            <p>&copy; 2026 Beyond Holistic. All rights reserved.</p>
             <p>Premium spiritual products for your sacred journey</p>
           </div>
         </footer>
