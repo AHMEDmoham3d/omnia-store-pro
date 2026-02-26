@@ -6,7 +6,8 @@ export const products: Product[] = [
     name: 'Sacred Frankincense',
     description: 'Premium frankincense resin for spiritual cleansing and meditation. Hand-selected from the finest sources.',
     price: 24.99,
-    image: 'بخور1.jpg',
+    // image: 'بخور1.jpg',
+    image: 'public/بخور1.jpg',
     category: 'incense',
   },
   {
