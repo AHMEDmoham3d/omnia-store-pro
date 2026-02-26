@@ -25,13 +25,11 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     setLoading(true);
 
     try {
-      // إنشاء object للأوردر مع النوع الصحيح
       const orderData: Order = {
         ...formData,
         type: product.name,
       };
 
-      // تأكد أن count رقم
       orderData.count = Number(orderData.count);
 
       const { error } = await supabase
@@ -52,7 +50,9 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -80,14 +80,14 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
           {success && (
             <div className="success-message">
-             Your request has been successfully submitted! We will contact you soon.
+              Your request has been successfully submitted! We will contact you soon.
             </div>
           )}
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label className="form-label" htmlFor="name">
-                Full name  *
+                Full name *
               </label>
               <input
                 type="text"
@@ -104,7 +104,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="number">
-                Phone number  *
+                Phone number *
               </label>
               <input
                 type="tel"
@@ -121,11 +121,11 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="adres">
-                 delivery address *
+                Delivery address *
               </label>
               <textarea
                 id="adres"
-                name="address in detail"
+                name="adres"
                 className="form-textarea"
                 placeholder="Enter your delivery address in detail"
                 value={formData.adres}
@@ -154,7 +154,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="delivery_date">
-               Preferred delivery date*
+                Preferred delivery date *
               </label>
               <input
                 type="date"
