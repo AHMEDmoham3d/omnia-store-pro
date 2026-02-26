@@ -121,7 +121,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="adres">
-                عنوان التوصيل *
+                 delivery address *
               </label>
               <textarea
                 id="adres"
