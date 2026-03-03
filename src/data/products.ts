@@ -19,15 +19,15 @@ export const products: Product[] = [
     image: '/Sageincense1.jpeg,/Sageincense2.jpeg',
     category: 'incense',
   },
-  {
-    id: 'incense-3',
-    name: 'Dragon Blood Incense',
-    description:
-      'Powerful protection incense made from natural resin. Perfect for rituals and energy work.',
-    price: 22.99,
-    image: '/incense3.jpg',
-    category: 'incense',
-  },
+  // {
+  //   id: 'incense-3',
+  //   name: 'Dragon Blood Incense',
+  //   description:
+  //     'Powerful protection incense made from natural resin. Perfect for rituals and energy work.',
+  //   price: 22.99,
+  //   image: '/incense3.jpg',
+  //   category: 'incense',
+  // },
   {
     id: 'oils-1',
     name: 'Sacred Rose Oil',
