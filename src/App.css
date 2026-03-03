@@ -875,6 +875,99 @@ h1, h2, h3, h4, h5, h6 {
   animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+/* Modal Order - Taller for full image visibility */
+.modal-order {
+  max-width: 600px;
+  max-height: 95vh;
+}
+
+/* Modal Image Gallery */
+.modal-image-gallery {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 24px 24px 0 0;
+}
+
+.modal-product-image-full {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.3);
+  animation: imageFadeIn 0.4s ease;
+}
+
+/* Modal Navigation Arrows */
+.modal-image-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.modal-image-nav-btn:hover {
+  background: rgba(109, 40, 217, 0.9);
+  border-color: var(--primary-purple-light);
+  transform: translateY(-50%) scale(1.1);
+  opacity: 1;
+}
+
+.modal-image-nav-prev {
+  left: 12px;
+}
+
+.modal-image-nav-next {
+  right: 12px;
+}
+
+/* Modal Image Dots */
+.modal-image-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.modal-image-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.modal-image-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.3);
+}
+
+.modal-image-dot.active {
+  background: var(--accent-gold);
+  width: 28px;
+  border-radius: 5px;
+  transform: scale(1);
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;

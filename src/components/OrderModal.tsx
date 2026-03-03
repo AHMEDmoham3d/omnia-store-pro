@@ -8,6 +8,11 @@ interface OrderModalProps {
 }
 
 export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
+  // Split the image string by comma to get multiple images
+  const images = product.image.split(',').map(img => img.trim());
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const hasMultipleImages = images.length > 1;
+
   const [formData, setFormData] = useState({
     name: '',
     number: '',
@@ -18,6 +23,18 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+
+  // Handle previous image
+  const handlePrevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImageIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  // Handle next image
+  const handleNextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentImageIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
+  };
 
   // إرسال الأوردر
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,7 +47,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
         type: product.name,
       };
 
-      orderData.count = Number(orderData.count);
+      orderData.count = String(Number(orderData.count));
 
       const { error } = await supabase
         .from('orders')
@@ -62,16 +79,56 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
+      <div className="modal modal-order" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>
           ×
         </button>
-        <div className="modal-content">
+        
+        {/* Product Image Gallery */}
+        <div className="modal-image-gallery">
           <img
-            src={product.image}
-            alt={product.name}
-            className="modal-product-image"
+            src={images[currentImageIndex]}
+            alt={`${product.name} - Image ${currentImageIndex + 1}`}
+            className="modal-product-image-full"
+            key={currentImageIndex}
           />
+          
+          {hasMultipleImages && (
+            <>
+              {/* Navigation Arrows */}
+              <button 
+                className="modal-image-nav-btn modal-image-nav-prev" 
+                onClick={handlePrevImage}
+                aria-label="Previous image"
+              >
+                ‹
+              </button>
+              <button 
+                className="modal-image-nav-btn modal-image-nav-next" 
+                onClick={handleNextImage}
+                aria-label="Next image"
+              >
+                ›
+              </button>
+              
+              {/* Image Dots Indicator */}
+              <div className="modal-image-dots">
+                {images.map((_, index) => (
+                  <span 
+                    key={index}
+                    className={`modal-image-dot ${index === currentImageIndex ? 'active' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setCurrentImageIndex(index);
+                    }}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="modal-content">
           <div className="modal-header">
             <h2 className="modal-title">{product.name}</h2>
             <div className="modal-price">${product.price}</div>
