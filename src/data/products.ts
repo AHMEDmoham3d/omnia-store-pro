@@ -2,21 +2,21 @@ import { Product } from '../types';
 
 export const products: Product[] = [
   {
-    id: 'incense-1',
-    name: 'Sacred Frankincense',
+    id: 'Palo Santo',
+    name: 'Palo Santo ',
     description:
-      'Premium frankincense resin for spiritual cleansing and meditation. Hand-selected from the finest sources.',
-    price: 24.99,
-    image: '/incense1.jpg',
+      'It is a sacred wood that has been used for centuries in purification and meditation rituals in South America Spiritual healers have used it for thousands of years to cleanse energy during ceremonies. Its scent is warm and woody with a light touch of sweetness and citrus.',
+    price: 300,
+    image: '/incense1.jpg,incense2.jpg,incense.jpg',
     category: 'incense',
   },
   {
-    id: 'incense-2',
+    id: 'Sage incense',
     name: 'Mystical Sandalwood',
     description:
-      'Pure sandalwood incense sticks for relaxation and spiritual practices. Creates a calming atmosphere.',
-    price: 19.99,
-    image: '/incense2.jpg',
+      'Sage has been used for centuries in purification rituals and energy cleansing. Its scent is strong, herbal, and refreshing, helping to release heavy energies and restore balance to the space and the aura.',
+    price: 400,
+    image: '/Sageincense1.jpeg,Sageincense2.jpeg',
     category: 'incense',
   },
   {
