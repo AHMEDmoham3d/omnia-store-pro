@@ -57,7 +57,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/admin" element={<Admin />} />
+<Route path="/omni4-st0r3-m4n4g3r-p4n3l-v2" element={<Admin />} />
           </Routes>
         </main>
 
