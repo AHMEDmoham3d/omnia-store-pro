@@ -69,7 +69,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
       <div className="product-content">
         <div className="product-category">{product.category}</div>
         <h3 className="product-title">{product.name}</h3>
-        <p className="product-description">{product.description}</p>
+        <p className="product-description" dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br>') }} />
         <div className="product-footer">
 <div className="product-price">{product.price} L.E</div>
           <button className="product-btn" onClick={onClick}>
