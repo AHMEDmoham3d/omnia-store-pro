@@ -4,18 +4,16 @@ export const products: Product[] = [
   {
     id: 'Palo Santo',
     name: 'Palo Santo',
-    description: `It is a sacred wood that has been used for centuries in purification and meditation rituals in South America
-Spiritual healers have used it for thousands of years to cleanse energy during ceremonies
-Its scent is warm and woody with a light touch of sweetness and citrus
+    description: `It is a sacred wood that has been used for centuries in purification and meditation rituals in South America. Spiritual healers have used it for thousands of years to cleanse energy during ceremonies. Its scent is warm and woody with a light touch of sweetness and citrus.
 
 المميزات:
-• رائحة دافئة خشبية مع لمسة citrus
-  رائحة دافئة وخشبية مع لمسة حلوة citrus
-• يستخدم لتنقية الطاقة في الطقوس
+• Warm, woody scent with a citrus touch
+  رائحة دافئة وخشبية مع لمسة حلوة من الحمضيات
+• Used for energy purification in rituals
   يُستخدم لتنقية الطاقة السلبية في الطقوس
-• مثالي للتأمل والتطهير الروحاني
-  مثالي لجلسات التأمل وطقوس التطهير
-• يُستخدم من قبل المعالجين الروحانيين
+• Ideal for meditation and spiritual cleansing
+  مثالي لجلسات التأمل وطقوس التطهير الروحاني
+• Used by spiritual healers
   يستخدم منذ آلاف السنين للمعالجة الروحانية`,
     price: 300,
     image: '/incense1.jpeg,/incense2.jpeg,/incense3.jpeg',
@@ -24,17 +22,16 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Sage incense',
     name: 'Sage Sandalwood',
-    description: `Sage has been used for centuries in purification rituals and energy cleansing
-Its scent is strong, herbal, and refreshing, helping to release heavy energies and restore balance to the space and the aura
+    description: `Sage has been used for centuries in purification rituals and energy cleansing. Its scent is strong, herbal, and refreshing, helping to release heavy energies and restore balance to the space and the aura.
 
 المميزات:
-• رائحة عشبية قوية ومنعشة
+• Strong, herbal and refreshing scent
   رائحة عشبية قوية ومنعشة تنقي الجو
-• يساعد في تحرير الطاقة الثقيلة
+• Helps release heavy energies
   يساعد في تحرير الطاقات السلبية من المكان
-• يستعيد التوازن للمكان والأ aura
-  يستعيد التوازن للطاقة في المكان والحقل energyي
-• مثالي لطقوس التطهير
+• Restores balance to space and aura
+  يستعيد التوازن للطاقة في المكان والحقل
+• Ideal for purification rituals
   مثالي لطقوس التطهير والتنقية الروحانية`,
     price: 400,
     image: '/Sageincense2.jpeg,/Sageincense1.jpeg',
@@ -43,19 +40,17 @@ Its scent is strong, herbal, and refreshing, helping to release heavy energies a
   {
     id: 'oils-1',
     name: 'Sacred Rose Oil',
-    description: `Pure rose essential oil for love and healing rituals
-Premium quality with divine fragrance
-Perfect for spiritual ceremonies
+    description: `Pure rose essential oil for love and healing rituals. Premium quality with divine fragrance. Perfect for spiritual ceremonies.
 
 الاستخدامات:
-• طقوس الحب والشفاء
+• Love and healing rituals
   مثالي لطقوس الحب وجلب الطاقة الإيجابية
-• التأمل والروتين اليومي
-  يمكن استخدامه يوميًا مع التأمل
-• العلاج بالروائح
+• Meditation and daily routine
+  يمكن استخدامه يومياً مع التأمل
+• Aromatherapy
   علاج بالروائح لتحسين المزاج والطاقة
-• يمنح Aura رائحة Divine
-  يمنح Aura رائحة Divine والجمال الروحاني`,
+• Gives aura a divine fragrance
+  يمنح رائحة والجمال الروحاني`,
     price: 34.99,
     image: '/oil1.jpg',
     category: 'oils',
@@ -63,18 +58,16 @@ Perfect for spiritual ceremonies
   {
     id: 'oils-2',
     name: 'Spiritual Lavender Oil',
-    description: `Calming lavender oil for meditation and relaxation
-100% natural and therapeutic grade
-Perfect for spiritual practices
+    description: `Calming lavender oil for meditation and relaxation. 100% natural and therapeutic grade. Perfect for spiritual practices.
 
 الاستخدامات:
-• التأمل والاسترخاء
+• Meditation and relaxation
   مثالي لجلسات التأمل والاسترخاء العميق
-• تخفيف التوتر والقلق
+• Relieving tension and anxiety
   يساعد في تخفيف التوتر والقلق اليومي
-• تحسين جودة النوم
+• Improving sleep quality
   يمكن استخدامه قبل النوم لتحسين النوم
-• العلاج بالروائح
+• Aromatherapy
   علاج بالروائح للشفاء العاطفي`,
     price: 28.99,
     image: '/oil2.jpg',
@@ -83,18 +76,16 @@ Perfect for spiritual practices
   {
     id: 'oils-3',
     name: 'Mystic Patchouli Oil',
-    description: `Earthy patchouli oil for grounding and abundance rituals
-Deep, rich aroma
-Perfect for spiritual grounding
+    description: `Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma. Perfect for spiritual grounding.
 
 الاستخدامات:
-• طقوس جلب الرزق والثروة
+• Rituals for attracting wealth and abundance
   مثالي لطقوس جلب الرزق والثروة
-• التأريض الروحاني
+• Spiritual grounding
   يساعد في التأريض وتوازن الطاقة الأرضية
-• توازن الطاقة
+• Energy balance
   يستعيد توازن الطاقة في الجسم والبيئة
-• رائحة عميقة وغنية
+• Deep and rich fragrance
   رائحة عميقة وغنية تدوم طويلاً`,
     price: 29.99,
     image: '/oil3.webp',
@@ -103,25 +94,24 @@ Perfect for spiritual grounding
   {
     id: 'cards-1',
     name: 'أوركل أسماء الله الحسنى',
-    description: `مش مجرد كروت... هي أداة ذكر وتجربة روحانية
-الكروت مصممة برؤية مدروسة تجمع بين البعد الروحاني وعلم الأرقام
+    description: `مش مجرد كروت... هي أداة ذكر وتجربة روحانية. الكروت مصممة برؤية مدروسة تجمع بين البعد الروحاني وعلم الأرقام.
 
 المحتوى:
-• كروت أسماء الله الحسنى كاملة
+• Complete names of God cards
   99 بطاقة بأسماء الله الحسنى
-• شرح لمعنى كل اسم
+• Explanation of each name's meaning
   شرح مفصل لمعنى كل اسم الله عز وجل
-• عدد مقترح لترديد الاسم
+• Suggested number for repeating each name
   عدد مقترح لكل اسم للذكر والترديد
-• كيفية استخدام الكروت
+• How to use the cards
   دليل شامل لاستخدام الكروت في التأمل
 
 المناسبة:
-• جلسات التأمل
+• Meditation sessions
   مثالية لجلسات التأمل اليومي
-• رسائل كونية في موقف صعب
+• Cosmic messages in difficult situations
   استقبل رسائل إلهية في المواقف الصعبة
-• هدية روحانية لشخص عزيز
+• Spiritual gift for a loved one
   هدية مميزة وراقية للأصدقاء`,
     price: 32.99,
     image: '/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
@@ -130,25 +120,24 @@ Perfect for spiritual grounding
   {
     id: 'Game',
     name: 'Game تشافي',
-    description: `تشافي جامع - 56 كارت للتأمل
-مجموعة بطاقات تحتوي على أسئلة عميقة للتأمل
+    description: `تشافي جامع - 56 كارت للتأمل. مجموعة بطاقات تحتوي على أسئلة عميقة للتأمل.
 
 الأسئلة تتناول:
-• نفسك وهويتك
+• Yourself and your identity
   أسئلة للتعمق في معرفة نفسك الحقيقية
-• طفولتك وذكرياتك
+• Your childhood and memories
   أسئلة عن طفولتك وذكرياتك المؤثرة
-• عائلتك وعلاقاتك
+• Your family and relationships
   أسئلة عن عائلتك والعلاقات المهمة
-• الأدوار التي تلعبها في حياتك
+• The roles you play in your life
   أسئلة عن أدوارك ومدى رضاك عنها
 
-لمن هذا المنتج؟
-• من يريد التعرف على نفسه بشكل أعمق
+لمن هذا المنتج?
+• Anyone wanting to know themselves deeper
   مثالي لمن يريد استكشاف أعماقه
-• المعالجين والكوتش في جلسات عملهم
+• Therapists and coaches in their sessions
   أداة احترافية للمعالجين
-• الأصدقاء في قعدة وعي
+• Friends in awareness sessions
   ممتعة ومفيدة للمجموعات الروحانية`,
     price: 780,
     image: '/Game1.jpeg,/Game2.jpeg,/Game3.jpeg',
@@ -157,23 +146,22 @@ Perfect for spiritual grounding
   {
     id: 'Jar-1',
     name: 'Jar تشافي',
-    description: `تشافي Jar - 73 كارت للشفاء النفسي
-مجموعة بطاقات تحتوي على توكيدات وتمارين للشفاء الداخلي
+    description: `تشافي Jar - 73 كارت للشفاء النفسي. مجموعة بطاقات تحتوي على توكيدات وتمارين للشفاء الداخلي.
 
 مدة الاستخدام:
-• برنامج 40 يوم للشفاء
+• 40-day healing program
   برنامج مدروس لـ 40 يوم للشفاء التام
-• عمل يومي منتظم
+• Regular daily practice
   تمارين وتوكيدات يومية منتظمة
 
-ماذا ستكتسب؟
-• الشفاء من Childhood hurts
+ماذا ستكتسب?
+• Healing from childhood hurts
   شفاء من جراح الطفولة والماضي
-• التصالح مع ماضيك
+• Making peace with your past
   مساعدة في التصالح مع الماضي
-• التوازن النفسي
+• Psychological balance
   تحقيق التوازن النفسي والعاطفي
-• تطوير الوعي الذاتي
+• Developing self-awareness
   تطوير الوعي الذاتي والنمو الشخصي`,
     price: 1000,
     image: '/Jar1.jpeg,/Jar2.jpeg,/Jar3.jpeg,/Jar4.jpeg',
@@ -182,25 +170,24 @@ Perfect for spiritual grounding
   {
     id: 'Jar-2',
     name: 'Jar Family Constellation',
-    description: `تشافي بتوكيدات Family Constellation
-برنامج شفاء متكامل للنظام العائلي
+    description: `تشافي بتوكيدات Family Constellation. برنامج شفاء متكامل للنظام العائلي.
 
 المحتوى:
-• 55 تحدي نفسي
+• 55 psychological challenges
   55 تحدي للعمل على نفسك
-• 165 توكيد في 55 بطاقة
+• 165 affirmations on 55 cards
   165 توكيد إيجابي للشفاء
-• رسم للنظام العائلي
+• Family system diagram
   رسم تفاعلي للنظام العائلي
 
 الهدف:
-• الشفاء من الصدمات الموروثة
+• Healing inherited traumas
   شفاء من الصدمات المنقولة عبر الأجيال
-• التعامل مع الأنماط العائلية
+• Dealing with family patterns
   فهم والتعامل مع الأنماط الموروثة
-• التحرر من البرامج المحدودة
+• Breaking free from limited programs
   التحرر من البرامج والمعتقدات المحدودة
-• استعادة القوة الشخصية
+• Reclaiming personal power
   استعادة قوتك الشخصية الكاملة`,
     price: 1500,
     image: '/conf1.jpeg,/conf2.jpeg,/conf3.jpeg,/con4.jpeg',
@@ -209,18 +196,16 @@ Perfect for spiritual grounding
   {
     id: 'carpets-1',
     name: 'Meditation Prayer Rug',
-    description: `Luxurious prayer rug with sacred geometry patterns
-Soft, comfortable, and spiritually designed
-High quality materials
+    description: `Luxurious prayer rug with sacred geometry patterns. Soft, comfortable, and spiritually designed. High quality materials.
 
 المواصفات:
-• تصميم هندسي مقدس فريد
+• Unique sacred geometric design
   تصميم فريد مستوحى من الهندسة المقدسة
-• ناعمة ومريحة للاستخدام
+• Soft and comfortable to use
   سطح ناعم ومريح للجلسات الطويلة
-• مصممة خصيصاً للتأمل والصلاة
+• Specially designed for meditation and prayer
   مصممة خصيصًا لجلسات التأمل
-• جودة عالية تدوم طويلاً
+• High quality that lasts long
   جودة عالية تصمد مع الاستخدام`,
     price: 89.99,
     image: '/carpet1.jpg',
@@ -229,18 +214,16 @@ High quality materials
   {
     id: 'carpets-2',
     name: 'Mandala Spiritual Mat',
-    description: `Beautiful mandala design carpet for yoga and meditation practices
-Non-slip backing
-High quality materials
+    description: `Beautiful mandala design carpet for yoga and meditation practices. Non-slip backing. High quality materials.
 
 المواصفات:
-• تصميم مندالا مذهل
+• Stunning mandala design
   تصميم مندالا الجميل والمذهل
-• سطح غير قابل للانزلاق
+• Non-slip surface
   سطح آمن يمنع الانزلاق أثناء الاستخدام
-• مثالية لليوغا والتأمل
+• Perfect for yoga and meditation
   مثالية لممارسة اليوغا والتأمل
-• سهلة التنظيف والحفاظ
+• Easy to clean and maintain
   سهلة التنظيف والحفاظ عليها`,
     price: 79.99,
     image: '/carpet2.jpg',
@@ -249,21 +232,21 @@ High quality materials
   {
     id: 'carpets-3',
     name: 'Lotus Flower Prayer Carpet',
-    description: `Elegant lotus design for spiritual practice
-High-quality materials with intricate embroidery
-Perfect for meditation and prayer
+    description: `Elegant lotus design for spiritual practice. High-quality materials with intricate embroidery. Perfect for meditation and prayer.
 
 المواصفات:
-• تصميم زهرة اللوتس الأنيق
+• Elegant lotus flower design
   تصميم أنيق مستوحى من زهرة اللوتس
-• مواد عالية الجودة
+• High-quality materials
   مواد فاخرة ومتينه عالية الجودة
-• تطريز مفصل
+• Intricate embroidery
   تطريز مفصل باليد
-• مثالية للممارسة الروحانية
+• Perfect for spiritual practice
   مثالية لجلسات التأمل والصلاة`,
     price: 94.99,
     image: '/carpet3.jpg',
     category: 'carpets',
   },
 ];
+
+
