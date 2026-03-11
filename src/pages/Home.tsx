@@ -104,7 +104,7 @@ Discover a unique collection of cards that desgined to help you to connect to yo
         </div>
       </section>
 
-      <section className="section" id="carpets">
+      {/* <section className="section" id="carpets">
         <div className="section-header animate-fade-in-up">
           <h2 className="section-title">Sacred Prayer Carpets</h2>
           <p className="section-subtitle">
@@ -125,7 +125,7 @@ Discover a unique collection of cards that desgined to help you to connect to yo
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {selectedProduct && (
         <OrderModal
