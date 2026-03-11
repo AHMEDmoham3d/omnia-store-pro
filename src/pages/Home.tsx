@@ -38,10 +38,9 @@ export const Home: React.FC = () => {
 
       <section className="section" id="incense">
         <div className="section-header animate-fade-in-up">
-          <h2 className="section-title">Premium Spiritual Incense</h2>
+          <h2 className="section-title">Sacred Incense Collection</h2>
           <p className="section-subtitle">
-Sacred Incense Collection
-Natural imcense selected to purify your space,  uplift your spirit and create a peaceful stmosphere for meditation, rituals and everyday moments 
+Natural incense selected to purify your space,  uplift your spirit and create a peaceful stmosphere for meditation, rituals and everyday moments 
           </p>
         </div>
         <div className="products-grid">
@@ -84,9 +83,9 @@ Natural imcense selected to purify your space,  uplift your spirit and create a 
 
       <section className="section" id="cards">
         <div className="section-header animate-fade-in-up">
-          <h2 className="section-title">Spiritual Oracle Cards</h2>
+          <h2 className="section-title">Oracle & Healing Cards</h2>
           <p className="section-subtitle">
-        Oracle & Healing Cards
+        
 Discover a unique collection of cards that desgined to help you to connect to your intuition , recieve guidance , deepen self-awareness and bring moments of reflection and connection .
           </p>
         </div>

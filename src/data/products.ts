@@ -71,7 +71,7 @@ export const products: Product[] = [
   },
   {
     id: 'Game',
-    name: 'Game - تشافي',
+    name: 'Game تشافي',
     description: `تشافي جامع
 
 يشمل 56 كارت به أسئلة للتأمل عن:
@@ -91,7 +91,7 @@ export const products: Product[] = [
   },
   {
     id: 'Jar-1',
-    name: 'Jar - تشافي',
+    name: 'Jar تشافي',
     description: `تشافي Jar
 
 يشمل 73 كارت به توكيدات وتمارين شفاءية للتوازن النفسي

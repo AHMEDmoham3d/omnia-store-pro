@@ -13,7 +13,7 @@ export interface Order {
   name: string;
   number: string;
   adres: string;
-  count: number;  // bigint في قاعدة البيانات
+  count: string;
   type: string;
   delivery_date?: string;
 }

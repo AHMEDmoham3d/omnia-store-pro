@@ -71,7 +71,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
         <h3 className="product-title">{product.name}</h3>
         <p className="product-description">{product.description}</p>
         <div className="product-footer">
-          <div className="product-price">${product.price}</div>
+<div className="product-price">{product.price} L.E</div>
           <button className="product-btn" onClick={onClick}>
            Order now
           </button>

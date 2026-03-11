@@ -129,9 +129,9 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
         </div>
 
         <div className="modal-content">
-          <div className="modal-header">
+<div className="modal-header">
             <h2 className="modal-title">{product.name}</h2>
-            <div className="modal-price">${product.price}</div>
+            <div className="modal-price">{product.price} L.E</div>
           </div>
           <p className="modal-description">{product.description}</p>
 
