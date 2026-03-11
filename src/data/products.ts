@@ -66,7 +66,7 @@ export const products: Product[] = [
 - رسائل كونية في موقف صعب أو تحدي
 - هدية روحانية لشخص عزيز`,
     price: 32.99,
-    image: '/card1.jpeg,/card2.jpeg,/card3.jpeg,/card4.jpeg,/card5.jpeg,/card6.jpeg,/card7.jpeg,/card9.jpeg',
+    image: '/card10.jpeg,/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
     category: 'cards',
   },
   {
