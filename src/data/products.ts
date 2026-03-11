@@ -3,8 +3,10 @@ import { Product } from '../types';
 export const products: Product[] = [
   {
     id: 'Palo Santo',
-    name: 'Palo Santo بخور مقدس',
-    description: `خشب مقدس يُستخدم منذ قرون في أمريكا الجنوبية
+    name: 'Palo Santo',
+    description: `It is a sacred wood that has been used for centuries in purification and meditation rituals in South America
+Spiritual healers have used it for thousands of years to cleanse energy during ceremonies
+Its scent is warm and woody with a light touch of sweetness and citrus
 
 المميزات:
 • رائحة دافئة خشبية مع لمسة citrus
@@ -21,8 +23,9 @@ export const products: Product[] = [
   },
   {
     id: 'Sage incense',
-    name: 'Sage Sandalwood بخور الصَحَن',
-    description: `عشب تقليدي للتطهير والتنقية
+    name: 'Sage Sandalwood',
+    description: `Sage has been used for centuries in purification rituals and energy cleansing
+Its scent is strong, herbal, and refreshing, helping to release heavy energies and restore balance to the space and the aura
 
 المميزات:
 • رائحة عشبية قوية ومنعشة
@@ -39,8 +42,10 @@ export const products: Product[] = [
   },
   {
     id: 'oils-1',
-    name: 'Sacred Rose Oil زيت الورد المقدس',
-    description: `زيت ورد طبيعي بنسبة 100%
+    name: 'Sacred Rose Oil',
+    description: `Pure rose essential oil for love and healing rituals
+Premium quality with divine fragrance
+Perfect for spiritual ceremonies
 
 الاستخدامات:
 • طقوس الحب والشفاء
@@ -57,8 +62,10 @@ export const products: Product[] = [
   },
   {
     id: 'oils-2',
-    name: 'Spiritual Lavender Oil زيت اللافندر الروحاني',
-    description: `زيت لافندر مهدئ بنسبة 100% طبيعي
+    name: 'Spiritual Lavender Oil',
+    description: `Calming lavender oil for meditation and relaxation
+100% natural and therapeutic grade
+Perfect for spiritual practices
 
 الاستخدامات:
 • التأمل والاسترخاء
@@ -75,8 +82,10 @@ export const products: Product[] = [
   },
   {
     id: 'oils-3',
-    name: 'Mystic Patchouli Oil زيت الباتشولي الغامض',
-    description: `زيت أرضي للتأريض الروحاني
+    name: 'Mystic Patchouli Oil',
+    description: `Earthy patchouli oil for grounding and abundance rituals
+Deep, rich aroma
+Perfect for spiritual grounding
 
 الاستخدامات:
 • طقوس جلب الرزق والثروة
@@ -94,9 +103,8 @@ export const products: Product[] = [
   {
     id: 'cards-1',
     name: 'أوركل أسماء الله الحسنى',
-    description: `مجموعة كروت أوركل أسماء الله الحسنى
-
-مش مجرد كروت... هي أداة ذكر وتجربة روحانية
+    description: `مش مجرد كروت... هي أداة ذكر وتجربة روحانية
+الكروت مصممة برؤية مدروسة تجمع بين البعد الروحاني وعلم الأرقام
 
 المحتوى:
 • كروت أسماء الله الحسنى كاملة
@@ -116,15 +124,13 @@ export const products: Product[] = [
 • هدية روحانية لشخص عزيز
   هدية مميزة وراقية للأصدقاء`,
     price: 32.99,
-    image: '/card10.jpeg,/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
+    image: '/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
     category: 'cards',
   },
   {
     id: 'Game',
-    name: 'Game تشافي - بطاقات التأمل',
+    name: 'Game تشافي',
     description: `تشافي جامع - 56 كارت للتأمل
-
-الوصف:
 مجموعة بطاقات تحتوي على أسئلة عميقة للتأمل
 
 الأسئلة تتناول:
@@ -150,10 +156,8 @@ export const products: Product[] = [
   },
   {
     id: 'Jar-1',
-    name: 'Jar تشافي - بطاقات الشفاء',
+    name: 'Jar تشافي',
     description: `تشافي Jar - 73 كارت للشفاء النفسي
-
-الوصف:
 مجموعة بطاقات تحتوي على توكيدات وتمارين للشفاء الداخلي
 
 مدة الاستخدام:
@@ -177,10 +181,8 @@ export const products: Product[] = [
   },
   {
     id: 'Jar-2',
-    name: 'Jar Family Constellation - بطاقات الجينالوجي',
+    name: 'Jar Family Constellation',
     description: `تشافي بتوكيدات Family Constellation
-
-الوصف:
 برنامج شفاء متكامل للنظام العائلي
 
 المحتوى:
@@ -206,8 +208,10 @@ export const products: Product[] = [
   },
   {
     id: 'carpets-1',
-    name: 'Meditation Prayer Rug - سجادة التأمل',
-    description: `سجادة صلاة فاخرة بزخارف هندسية مقدسة
+    name: 'Meditation Prayer Rug',
+    description: `Luxurious prayer rug with sacred geometry patterns
+Soft, comfortable, and spiritually designed
+High quality materials
 
 المواصفات:
 • تصميم هندسي مقدس فريد
@@ -224,8 +228,10 @@ export const products: Product[] = [
   },
   {
     id: 'carpets-2',
-    name: 'Mandala Spiritual Mat - سجادة المندالا',
-    description: `سجادة يوغا والتأمل بتصميم المندالا الجميل
+    name: 'Mandala Spiritual Mat',
+    description: `Beautiful mandala design carpet for yoga and meditation practices
+Non-slip backing
+High quality materials
 
 المواصفات:
 • تصميم مندالا مذهل
@@ -242,8 +248,10 @@ export const products: Product[] = [
   },
   {
     id: 'carpets-3',
-    name: 'Lotus Flower Prayer Carpet - سجادة اللوتس',
-    description: `سجادة صلاة أنيقة بتصميم زهرة اللوتس
+    name: 'Lotus Flower Prayer Carpet',
+    description: `Elegant lotus design for spiritual practice
+High-quality materials with intricate embroidery
+Perfect for meditation and prayer
 
 المواصفات:
 • تصميم زهرة اللوتس الأنيق
