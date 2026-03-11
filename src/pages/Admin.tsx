@@ -125,17 +125,68 @@ export const Admin: React.FC = () => {
           </button>
         </div>
         
-        {/* Debug Info */}
+        {/* Welcome Message */}
         <div style={{ 
-          backgroundColor: "#2c3e50", 
-          padding: "15px", 
-          borderRadius: "8px", 
-          marginBottom: "20px",
-          border: "2px solid #e74c3c"
+          background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+          padding: "30px", 
+          borderRadius: "16px", 
+          marginBottom: "30px",
+          border: "1px solid rgba(251, 191, 36, 0.3)",
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+          position: "relative",
+          overflow: "hidden"
         }}>
-          <h3 style={{ margin: "0 0 10px 0" }}>Debug Info:</h3>
-          <p style={{ margin: "5px 0" }}>Orders Array Length: {orders.length}</p>
-          <p style={{ margin: "5px 0" }}>Is Array: {Array.isArray(orders) ? 'YES' : 'NO'}</p>
+          {/* Decorative elements */}
+          <div style={{
+            position: "absolute",
+            top: "-50%",
+            right: "-10%",
+            width: "200px",
+            height: "200px",
+            background: "radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 70%)",
+            borderRadius: "50%"
+          }}></div>
+          <div style={{
+            position: "absolute",
+            bottom: "-30%",
+            left: "-5%",
+            width: "150px",
+            height: "150px",
+            background: "radial-gradient(circle, rgba(109, 40, 217, 0.2) 0%, transparent 70%)",
+            borderRadius: "50%"
+          }}></div>
+          
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "15px" }}>
+              <span style={{ fontSize: "28px" }}>🌟</span>
+              <h3 style={{ margin: 0, color: "#fbbf24", fontSize: "22px", fontWeight: 700, letterSpacing: "0.5px" }}>
+                Welcome to Omnia Community
+              </h3>
+            </div>
+            <p style={{ margin: 0, color: "#d1d5db", lineHeight: "1.9", fontSize: "15px", fontWeight: 400 }}>
+              This page is not just for tracking orders, but the beginning of a community that belongs to Omnia.{' '}
+              <span style={{ color: "#fbbf24", fontWeight: 600 }}>You are not just running a business,</span> but creating a real impact.{' '}
+              And the disappearance of this message one day means that the community has indeed been born.
+            </p>
+            <div style={{ 
+              marginTop: "20px", 
+              paddingTop: "15px", 
+              borderTop: "1px solid rgba(251, 191, 36, 0.2)",
+              display: "flex",
+              gap: "20px",
+              flexWrap: "wrap"
+            }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#9ca3af", fontSize: "13px" }}>
+                <span style={{ color: "#27ae60" }}>✓</span> Track Orders
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#9ca3af", fontSize: "13px" }}>
+                <span style={{ color: "#27ae60" }}>✓</span> Build Community
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#9ca3af", fontSize: "13px" }}>
+                <span style={{ color: "#27ae60" }}>✓</span> Create Impact
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* Error Message */}

@@ -60,7 +60,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="section" id="oils">
+      {/* <section className="section" id="oils">
         <div className="section-header animate-fade-in-up">
           <h2 className="section-title">Sacred Essential Oils</h2>
           <p className="section-subtitle">
@@ -81,7 +81,7 @@ export const Home: React.FC = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="section" id="cards">
         <div className="section-header animate-fade-in-up">

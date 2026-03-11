@@ -19,15 +19,6 @@ export const products: Product[] = [
     image: '/Sageincense1.jpeg,/Sageincense2.jpeg',
     category: 'incense',
   },
-  // {
-  //   id: 'incense-3',
-  //   name: 'Dragon Blood Incense',
-  //   description:
-  //     'Powerful protection incense made from natural resin. Perfect for rituals and energy work.',
-  //   price: 22.99,
-  //   image: '/incense3.jpg',
-  //   category: 'incense',
-  // },
   {
     id: 'oils-1',
     name: 'Sacred Rose Oil',
@@ -59,27 +50,76 @@ export const products: Product[] = [
     id: 'cards-1',
     name: 'Angel Guidance Cards',
     description:
-      'Beautiful angel oracle cards for divine guidance. 44 cards with guidebook included.',
+      `مجموعة كروت أوركل  
+✨️🕯️🌙أسماء الله الحسنى🌙🕯️✨
+
+مش مجرد كروت … 
+هى أداه ذكر وتجربه روحانيه هتعيشها مع كل أسم من أسماء الله الحسنى هتساعدك على إعاده التوازن الداخلى والسكينه.
+
+الكروت مصممه برؤيه مدروسه تجمع بين البعد الروحنى وعلم الأرقام.
+
+المجموعه تحتوى على:
+🕯️كروت أسماء الله الحسنى كامله + شرح لمعنى كل اسم + عدد مقترح لترديد الاسم + كيفيه أستخدام الكروت
+
+✨🎁 مناسبة جدا ل : 
+جلسات التأمل 
+رسائل كونيه في موقف صعب او تحدي بتمر به
+كهدية روحانية ذات معنى لشخص عزيز عليك
+
+يوجد تصميم رمضانى وتصميم روحاني تقدر تختار المناسب لك - 
+النسخ من الإصدار الأول محدوده جدا 
+
+تقدروا تطلبوها الان وتصلكم لحد باب البيت`,
     price: 32.99,
-    image: '/card1.webp',
+    image: '/card1.jpeg,/card2.jpeg,/card3.jpeg,/card4.jpeg,/card5.jpeg',
     category: 'cards',
   },
   {
-    id: 'cards-2',
-    name: 'Spiritual Wisdom Deck',
+       id: 'Game',
+    name: 'Game',
     description:
-      'Mystical tarot-style cards for spiritual insight and meditation. Gold-gilded edges.',
-    price: 38.99,
-    image: '/card2.webp',
+      `*تشافي Game*
+يشمل ٥٦ كارت به اسأله للتاءمل عن نفسك و طفولتك و عيلتك و الأدوار الي بتلعبها في حياتك 
+
+💥مناسبه ليك لو عايز تتعرف على نفسك بشكل اعمق
+
+💥مناسبه للكوتش يستخدمها في جلساته و الورش الي بيعملها 
+
+💥مناسبه للأصحاب يلعبوها في قعده وعي
+ `,
+    price: 780,
+    image: '/Game1.jpeg,/Game2.jpeg,/Game3.jpeg',
     category: 'cards',
   },
   {
-    id: 'cards-3',
-    name: 'Chakra Healing Cards',
+       id: 'Jar',
+    name: 'Jar',
     description:
-      'Energy healing cards focused on chakra balance and alignment. Vibrant artwork.',
-    price: 29.99,
-    image: '/card3.webp',
+      `*تشافيJar*
+يشمل ٧٣ كارت به توكيدات و تمارين شفاءيه للتوازن النفسي و شفاء الطفل بداخلنا نعملها لمده ٤٠ يوم
+
+💥مناسبه لكل شخص عايز يشتغل على نفسه و طفولته و يتصالح معاها
+`,
+    price: 1000,
+    image: '/Jar1.jpeg,/Jar2.jpeg,/Jar3.jpeg,/Jar4.jpeg',
+    category: 'cards',
+  },
+  {
+          id: 'Jar',
+    name: 'Jar',
+    description:
+      `
+*تشافي بتوكيدات الفاميلي كونستليشن*
+
+تشمل ٥٥ تحدي ، ١٦٥ توكيد في ٥٥ كارت، و معاهم رسم للنظام العيله بهدف التشافي من الصدمات المنقوله عبر الأجيال 
+
+💥مناسبه لكل شخص عايز يشتغل على التحديات الي مبتدتش معاه و اتنقلتله من عيلته واعي بيها او معندوش فكره عنها
+
+💥مناسبه لكل ممارس الفاميلي كونستليشن في جلساته و مع الكلاينتس بتوعه
+
+`,
+    price: 1500,
+    image: '/conf1.jpeg,/conf2.jpeg,/conf3.jpeg,/conf4.jpeg',
     category: 'cards',
   },
   {
@@ -110,3 +150,4 @@ export const products: Product[] = [
     category: 'carpets',
   },
 ];
+
