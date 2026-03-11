@@ -5,18 +5,18 @@ export const products: Product[] = [
     id: 'Palo Santo',
     name: 'Palo Santo ',
     description:
-      'It is a sacred wood that has been used for centuries in purification and meditation rituals in South America Spiritual healers have used it for thousands of years to cleanse energy during ceremonies. Its scent is warm and woody with a light touch of sweetness and citrus.',
+      'It is a sacred wood that has been used for centuries in purification and meditation rituals in South America. Spiritual healers have used it for thousands of years to cleanse energy during ceremonies. Its scent is warm and woody with a light touch of sweetness and citrus.',
     price: 300,
     image: '/incense1.jpeg,/incense2.jpeg,/incense3.jpeg',
     category: 'incense',
   },
   {
     id: 'Sage incense',
-    name: 'Mystical Sandalwood',
+    name: 'Sage Sandalwood',
     description:
       'Sage has been used for centuries in purification rituals and energy cleansing. Its scent is strong, herbal, and refreshing, helping to release heavy energies and restore balance to the space and the aura.',
     price: 400,
-    image: '/Sageincense1.jpeg,/Sageincense2.jpeg',
+    image: '/Sageincense2.jpeg,/Sageincense1.jpeg',
     category: 'incense',
   },
   {
@@ -71,7 +71,7 @@ export const products: Product[] = [
 
 تقدروا تطلبوها الان وتصلكم لحد باب البيت`,
     price: 32.99,
-    image: '/card1.jpeg,/card2.jpeg,/card3.jpeg,/card4.jpeg,/card5.jpeg',
+    image: '/card1.jpeg,/card2.jpeg,/card3.jpeg,/card4.jpeg,/card5.jpeg,/card6.jpeg,/card7.jpeg,/card8.jpeg,/card9.jpeg',
     category: 'cards',
   },
   {

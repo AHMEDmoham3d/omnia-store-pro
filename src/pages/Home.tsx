@@ -31,8 +31,7 @@ export const Home: React.FC = () => {
         <div className="hero-content animate-fade-in">
           <h1>Beyond Holistic Store</h1>
           <p>
-            Discover premium spiritual products for your sacred journey. From mystical incense to healing oils,
-            oracle cards to meditation carpets - everything you need for your spiritual practice.
+          Here you will find carefully selected spiritual items designed to support your journey of healing, awarness and inner balance.
           </p>
         </div>
       </section>
@@ -41,8 +40,8 @@ export const Home: React.FC = () => {
         <div className="section-header animate-fade-in-up">
           <h2 className="section-title">Premium Spiritual Incense</h2>
           <p className="section-subtitle">
-            Hand-selected, ethically sourced incense for cleansing, meditation, and spiritual rituals.
-            Each product carries ancient wisdom and natural energy.
+Sacred Incense Collection
+Natural imcense selected to purify your space,  uplift your spirit and create a peaceful stmosphere for meditation, rituals and everyday moments 
           </p>
         </div>
         <div className="products-grid">
@@ -87,8 +86,8 @@ export const Home: React.FC = () => {
         <div className="section-header animate-fade-in-up">
           <h2 className="section-title">Spiritual Oracle Cards</h2>
           <p className="section-subtitle">
-            Divine guidance through beautifully designed oracle and tarot cards. Connect with higher wisdom
-            and receive messages from the universe.
+        Oracle & Healing Cards
+Discover a unique collection of cards that desgined to help you to connect to your intuition , recieve guidance , deepen self-awareness and bring moments of reflection and connection .
           </p>
         </div>
         <div className="products-grid">
