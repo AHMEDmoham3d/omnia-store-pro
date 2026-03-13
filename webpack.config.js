@@ -123,7 +123,10 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx'],
       fallback: {
-        process: require.resolve('process/browser')
+        process: require.resolve('process/browser.js')
+      },
+      alias: {
+        'process/browser': require.resolve('process/browser.js')
       }
     },
 
@@ -172,7 +175,7 @@ module.exports = (env, argv) => {
       }),
 
       new webpack.ProvidePlugin({
-        process: 'process/browser'
+        process: 'process/browser.js',
       }),
 
       new webpack.DefinePlugin({
