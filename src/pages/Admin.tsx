@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-// Direct Supabase API call
-const supabaseUrl = 'https://tixxvcxcrgxscmprldmi.supabase.co';
-const anonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpeHh2Y3hjcmd4c2NtcHJsZG1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzA5MzksImV4cCI6MjA2OTA0NjkzOX0.bhWFkJAMPAnEf9c1rRjEbyYG4XjQnOIP2dsVVeK_H3U';
+// Use env vars (injected by webpack.config.js)
+const supabaseUrl = process.env.VITE_SUPABASE_URL || '';
+const anonKey = process.env.VITE_SUPABASE_ANON_KEY || '';
 
 interface Order {
   id: number;
@@ -26,6 +26,20 @@ export const Admin: React.FC = () => {
   }, [refreshTrigger]);
 
   const fetchData = async () => {
+    // SECURITY: Check password first
+    const savedPassword = localStorage.getItem('adminPassword');
+    if (!savedPassword) {
+      const password = prompt('Enter admin password (first time sets it):');
+      if (!password) return;
+      localStorage.setItem('adminPassword', btoa(password)); // Simple base64
+      return fetchData();
+    }
+    const inputPassword = prompt('Admin Password:');
+    if (inputPassword && btoa(inputPassword) !== savedPassword) {
+      setError('❌ Invalid password. Access denied.');
+      return;
+    }
+
     setLoading(true);
     setError(null);
     
