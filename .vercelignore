@@ -1,0 +1,10 @@
+node_modules
+dist
+.supabase
+.env*
+!.env.example
+.vercel
+TODO.md
+*.log
+.DS_Store
+Thumbs.db

@@ -37,62 +37,62 @@ export const products: Product[] = [
     image: '/Sageincense2.jpeg,/Sageincense1.jpeg',
     category: 'incense',
   },
-  {
-    id: 'oils-1',
-    name: 'Sacred Rose Oil',
-    description: `Pure rose essential oil for love and healing rituals. Premium quality with divine fragrance. Perfect for spiritual ceremonies.
+//   {
+//     id: 'Sacred Rose Oil',
+//     name: 'Sacred Rose Oil',
+//     description: `Pure rose essential oil for love and healing rituals. Premium quality with divine fragrance. Perfect for spiritual ceremonies.
 
-الاستخدامات:
-• Love and healing rituals
-  مثالي لطقوس الحب وجلب الطاقة الإيجابية
-• Meditation and daily routine
-  يمكن استخدامه يومياً مع التأمل
-• Aromatherapy
-  علاج بالروائح لتحسين المزاج والطاقة
-• Gives aura a divine fragrance
-  يمنح رائحة والجمال الروحاني`,
-    price: 34.99,
-    image: '/oil1.jpg',
-    category: 'oils',
-  },
-  {
-    id: 'oils-2',
-    name: 'Spiritual Lavender Oil',
-    description: `Calming lavender oil for meditation and relaxation. 100% natural and therapeutic grade. Perfect for spiritual practices.
+// الاستخدامات:
+// • Love and healing rituals
+//   مثالي لطقوس الحب وجلب الطاقة الإيجابية
+// • Meditation and daily routine
+//   يمكن استخدامه يومياً مع التأمل
+// • Aromatherapy
+//   علاج بالروائح لتحسين المزاج والطاقة
+// • Gives aura a divine fragrance
+//   يمنح رائحة والجمال الروحاني`,
+//     price: 34.99,
+//     image: '/oil1.jpg',
+//     category: 'oils',
+//   },
+//   {
+//     id: 'oils-2',
+//     name: 'Spiritual Lavender Oil',
+//     description: `Calming lavender oil for meditation and relaxation. 100% natural and therapeutic grade. Perfect for spiritual practices.
 
-الاستخدامات:
-• Meditation and relaxation
-  مثالي لجلسات التأمل والاسترخاء العميق
-• Relieving tension and anxiety
-  يساعد في تخفيف التوتر والقلق اليومي
-• Improving sleep quality
-  يمكن استخدامه قبل النوم لتحسين النوم
-• Aromatherapy
-  علاج بالروائح للشفاء العاطفي`,
-    price: 28.99,
-    image: '/oil2.jpg',
-    category: 'oils',
-  },
-  {
-    id: 'oils-3',
-    name: 'Mystic Patchouli Oil',
-    description: `Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma. Perfect for spiritual grounding.
+// الاستخدامات:
+// • Meditation and relaxation
+//   مثالي لجلسات التأمل والاسترخاء العميق
+// • Relieving tension and anxiety
+//   يساعد في تخفيف التوتر والقلق اليومي
+// • Improving sleep quality
+//   يمكن استخدامه قبل النوم لتحسين النوم
+// • Aromatherapy
+//   علاج بالروائح للشفاء العاطفي`,
+//     price: 28.99,
+//     image: '/oil2.jpg',
+//     category: 'oils',
+//   },
+//   {
+//     id: 'oils-3',
+//     name: 'Mystic Patchouli Oil',
+//     description: `Earthy patchouli oil for grounding and abundance rituals. Deep, rich aroma. Perfect for spiritual grounding.
 
-الاستخدامات:
-• Rituals for attracting wealth and abundance
-  مثالي لطقوس جلب الرزق والثروة
-• Spiritual grounding
-  يساعد في التأريض وتوازن الطاقة الأرضية
-• Energy balance
-  يستعيد توازن الطاقة في الجسم والبيئة
-• Deep and rich fragrance
-  رائحة عميقة وغنية تدوم طويلاً`,
-    price: 29.99,
-    image: '/oil3.webp',
-    category: 'oils',
-  },
+// الاستخدامات:
+// • Rituals for attracting wealth and abundance
+//   مثالي لطقوس جلب الرزق والثروة
+// • Spiritual grounding
+//   يساعد في التأريض وتوازن الطاقة الأرضية
+// • Energy balance
+//   يستعيد توازن الطاقة في الجسم والبيئة
+// • Deep and rich fragrance
+//   رائحة عميقة وغنية تدوم طويلاً`,
+//     price: 29.99,
+//     image: '/oil3.webp',
+//     category: 'oils',
+//   },
   {
-    id: 'cards-1',
+    id: 'أوركل أسماء الله الحسن',
     name: 'أوركل أسماء الله الحسنى',
     description: `مش مجرد كروت... هي أداة ذكر وتجربة روحانية. الكروت مصممة برؤية مدروسة تجمع بين البعد الروحاني وعلم الأرقام.
 
@@ -113,12 +113,12 @@ export const products: Product[] = [
   استقبل رسائل إلهية في المواقف الصعبة
 • Spiritual gift for a loved one
   هدية مميزة وراقية للأصدقاء`,
-    price: 32.99,
+    price: 1500,
     image: '/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
     category: 'cards',
   },
   {
-    id: 'Game',
+    id: 'Game تشافي',
     name: 'Game تشافي',
     description: `تشافي جامع - 56 كارت للتأمل. مجموعة بطاقات تحتوي على أسئلة عميقة للتأمل.
 
@@ -144,7 +144,7 @@ export const products: Product[] = [
     category: 'cards',
   },
   {
-    id: 'Jar-1',
+    id: 'Jar تشافي',
     name: 'Jar تشافي',
     description: `تشافي Jar - 73 كارت للشفاء النفسي. مجموعة بطاقات تحتوي على توكيدات وتمارين للشفاء الداخلي.
 
@@ -168,7 +168,7 @@ export const products: Product[] = [
     category: 'cards',
   },
   {
-    id: 'Jar-2',
+    id: 'Jar Family Constellation',
     name: 'Jar Family Constellation',
     description: `تشافي بتوكيدات Family Constellation. برنامج شفاء متكامل للنظام العائلي.
 
@@ -193,60 +193,60 @@ export const products: Product[] = [
     image: '/conf1.jpeg,/conf2.jpeg,/conf3.jpeg,/con4.jpeg',
     category: 'cards',
   },
-  {
-    id: 'carpets-1',
-    name: 'Meditation Prayer Rug',
-    description: `Luxurious prayer rug with sacred geometry patterns. Soft, comfortable, and spiritually designed. High quality materials.
+//   {
+//     id: 'carpets-1',
+//     name: 'Meditation Prayer Rug',
+//     description: `Luxurious prayer rug with sacred geometry patterns. Soft, comfortable, and spiritually designed. High quality materials.
 
-المواصفات:
-• Unique sacred geometric design
-  تصميم فريد مستوحى من الهندسة المقدسة
-• Soft and comfortable to use
-  سطح ناعم ومريح للجلسات الطويلة
-• Specially designed for meditation and prayer
-  مصممة خصيصًا لجلسات التأمل
-• High quality that lasts long
-  جودة عالية تصمد مع الاستخدام`,
-    price: 89.99,
-    image: '/carpet1.jpg',
-    category: 'carpets',
-  },
-  {
-    id: 'carpets-2',
-    name: 'Mandala Spiritual Mat',
-    description: `Beautiful mandala design carpet for yoga and meditation practices. Non-slip backing. High quality materials.
+// المواصفات:
+// • Unique sacred geometric design
+//   تصميم فريد مستوحى من الهندسة المقدسة
+// • Soft and comfortable to use
+//   سطح ناعم ومريح للجلسات الطويلة
+// • Specially designed for meditation and prayer
+//   مصممة خصيصًا لجلسات التأمل
+// • High quality that lasts long
+//   جودة عالية تصمد مع الاستخدام`,
+//     price: 89.99,
+//     image: '/carpet1.jpg',
+//     category: 'carpets',
+//   },
+//   {
+//     id: 'carpets-2',
+//     name: 'Mandala Spiritual Mat',
+//     description: `Beautiful mandala design carpet for yoga and meditation practices. Non-slip backing. High quality materials.
 
-المواصفات:
-• Stunning mandala design
-  تصميم مندالا الجميل والمذهل
-• Non-slip surface
-  سطح آمن يمنع الانزلاق أثناء الاستخدام
-• Perfect for yoga and meditation
-  مثالية لممارسة اليوغا والتأمل
-• Easy to clean and maintain
-  سهلة التنظيف والحفاظ عليها`,
-    price: 79.99,
-    image: '/carpet2.jpg',
-    category: 'carpets',
-  },
-  {
-    id: 'carpets-3',
-    name: 'Lotus Flower Prayer Carpet',
-    description: `Elegant lotus design for spiritual practice. High-quality materials with intricate embroidery. Perfect for meditation and prayer.
+// المواصفات:
+// • Stunning mandala design
+//   تصميم مندالا الجميل والمذهل
+// • Non-slip surface
+//   سطح آمن يمنع الانزلاق أثناء الاستخدام
+// • Perfect for yoga and meditation
+//   مثالية لممارسة اليوغا والتأمل
+// • Easy to clean and maintain
+//   سهلة التنظيف والحفاظ عليها`,
+//     price: 79.99,
+//     image: '/carpet2.jpg',
+//     category: 'carpets',
+//   },
+//   {
+//     id: 'carpets-3',
+//     name: 'Lotus Flower Prayer Carpet',
+//     description: `Elegant lotus design for spiritual practice. High-quality materials with intricate embroidery. Perfect for meditation and prayer.
 
-المواصفات:
-• Elegant lotus flower design
-  تصميم أنيق مستوحى من زهرة اللوتس
-• High-quality materials
-  مواد فاخرة ومتينه عالية الجودة
-• Intricate embroidery
-  تطريز مفصل باليد
-• Perfect for spiritual practice
-  مثالية لجلسات التأمل والصلاة`,
-    price: 94.99,
-    image: '/carpet3.jpg',
-    category: 'carpets',
-  },
+// المواصفات:
+// • Elegant lotus flower design
+//   تصميم أنيق مستوحى من زهرة اللوتس
+// • High-quality materials
+//   مواد فاخرة ومتينه عالية الجودة
+// • Intricate embroidery
+//   تطريز مفصل باليد
+// • Perfect for spiritual practice
+//   مثالية لجلسات التأمل والصلاة`,
+//     price: 94.99,
+//     image: '/carpet3.jpg',
+//     category: 'carpets',
+//   },
 ];
 
 

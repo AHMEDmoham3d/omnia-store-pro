@@ -1,14 +1,18 @@
-# TODO List
+# Task Progress: Fix Home/Products visibility on Vercel & Secure Supabase
 
-## Current Status:
-- ✅ supabase.ts has credentials configured
-- ✅ App.tsx has complex route: /omni4-st0r3-m4n4g3r-p4n3l-v2
-- ✅ Admin.tsx has login form with hardcoded credentials
-  - Email: admin@beyondholistic.com  
-  - Password: BH2026Secure!
+## Completed Steps:
+1. ✅ Created .env.example with Supabase env var placeholders
+2. ✅ Edited src/lib/supabase.ts: Replaced hardcoded URL/key with VITE_ env vars
+3. ✅ Updated webpack.config.js: Added VITE env DefinePlugin + ProvidePlugin for process
+4. ✅ Updated tsconfig.json: Added "vite/client" types for import.meta.env
+5. ✅ Updated .vercelignore: Ignore .env* but keep .env.example
 
-## Remaining Tasks:
-- [ ] Update Admin.tsx to fetch and display orders from Supabase after login
+## Remaining Steps:
+6. [ ] Edit src/pages/Home.tsx: Uncomment oils/carpets sections, add category tabs UI, fix dynamic filtering
+7. [ ] **User Action**: Add VITE_SUPABASE_URL=https://tixxvcxcrgxscmprldmi.supabase.co and VITE_SUPABASE_ANON_KEY=(your anon key) to Vercel project env vars (Supabase > Settings > API)
+8. [ ] Test locally: npm run build (set env vars in shell first)
+9. [ ] Deploy: vercel --prod
+10. [ ] Verify: Check all products visible, no keys in Network tab
 
-## Link for Admin Page:
-https://beyondholistic.com/omni4-st0r3-m4n4g3r-p4n3l-v2 (example URL)
+**Next: Fixing Home.tsx...**
+

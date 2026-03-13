@@ -74,10 +74,15 @@ module.exports = (env, argv) => {
           isProduction ? 'production' : 'development'
         ),
 
-        'process.env.SUPABASE_URL': JSON.stringify(process.env.SUPABASE_URL),
-        'process.env.SUPABASE_ANON_KEY': JSON.stringify(process.env.SUPABASE_ANON_KEY),
+'process.env.VITE_SUPABASE_URL': JSON.stringify(process.env.VITE_SUPABASE_URL || ''),
+        'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(process.env.VITE_SUPABASE_ANON_KEY || ''),
+      }),
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
       }),
     ],
+
+
 
     devtool: isProduction ? 'source-map' : 'eval-source-map',
 

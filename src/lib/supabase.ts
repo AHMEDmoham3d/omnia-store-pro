@@ -1,8 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://tixxvcxcrgxscmprldmi.supabase.co';
-// Using service_role key to bypass RLS for admin panel
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpeHh2Y3hjcmd4c2NtcHJsZG1pIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzQ3MDkzOSwiZXhwIjoyMDY5MDQ2OTM5fQ.hxMFYo5QuqMaGJhm8EWj2ZRT0cecdRa0Vp1KhL-rdZ4';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
+
+// Use VITE_SUPABASE_ANON_KEY from .env (public anon key only!)
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
+
 
 export const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
