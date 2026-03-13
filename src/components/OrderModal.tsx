@@ -18,7 +18,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     number: '',
     adres: '',
     count: '1',
-    delivery_date: '',
+    notes: '',
   });
 
   const [loading, setLoading] = useState(false);
@@ -210,19 +210,19 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
             </div>
 
             <div className="form-group">
-              <label className="form-label" htmlFor="delivery_date">
-                Preferred delivery date *
+              <label className="form-label" htmlFor="notes">
+                ملاحظات *
               </label>
               <input
-                type="date"
-                id="delivery_date"
-                name="delivery_date"
+                type="text"
+                id="notes"
+                name="notes"
                 className="form-input"
-                value={formData.delivery_date}
+                placeholder="اكتب أي ملاحظات..."
+                value={formData.notes}
                 onChange={handleChange}
                 required
                 disabled={loading || success}
-                min={new Date().toISOString().split('T')[0]}
               />
             </div>
 

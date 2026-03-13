@@ -15,7 +15,7 @@ export interface Order {
   adres: string;
   count: string;
   type: string;
-  delivery_date?: string;
+  notes?: string;
 }
 
 export interface VisitorAnalytics {

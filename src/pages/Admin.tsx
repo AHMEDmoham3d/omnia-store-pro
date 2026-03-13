@@ -12,7 +12,7 @@ interface Order {
   adres: string;
   count: number;
   type: string;
-  delivery_date: string;
+  notes: string;
 }
 
 export const Admin: React.FC = () => {
@@ -245,7 +245,7 @@ export const Admin: React.FC = () => {
                   <th style={{ padding: "15px", textAlign: "left", borderBottom: "2px solid #e94560" }}>Address</th>
                   <th style={{ padding: "15px", textAlign: "left", borderBottom: "2px solid #e94560" }}>Qty</th>
                   <th style={{ padding: "15px", textAlign: "left", borderBottom: "2px solid #e94560" }}>Type</th>
-                  <th style={{ padding: "15px", textAlign: "left", borderBottom: "2px solid #e94560" }}>Delivery</th>
+                  <th style={{ padding: "15px", textAlign: "left", borderBottom: "2px solid #e94560" }}>Notes</th>
                   <th style={{ padding: "15px", textAlign: "left", borderBottom: "2px solid #e94560" }}>Date</th>
                 </tr>
               </thead>
@@ -258,7 +258,7 @@ export const Admin: React.FC = () => {
                     <td style={{ padding: "15px" }}>{order.adres}</td>
                     <td style={{ padding: "15px" }}>{order.count}</td>
                     <td style={{ padding: "15px" }}>{order.type}</td>
-                    <td style={{ padding: "15px" }}>{order.delivery_date || '-'}</td>
+                    <td style={{ padding: "15px" }}>{order.notes || '-'}</td>
                     <td style={{ padding: "15px" }}>
                       {order.created_at ? new Date(order.created_at).toLocaleDateString() : '-'}
                     </td>
