@@ -98,6 +98,8 @@
 //     },
 //   };
 // };
+require('dotenv').config();
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
@@ -111,11 +113,9 @@ module.exports = (env, argv) => {
 
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: isProduction
-        ? 'bundle.[contenthash].js'
-        : 'bundle.js',
+      filename: isProduction ? 'bundle.[contenthash].js' : 'bundle.js',
       clean: true,
-      publicPath: './',
+      publicPath: '/',
     },
 
     mode: isProduction ? 'production' : 'development',
@@ -123,11 +123,8 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx'],
       fallback: {
-        process: require.resolve('process/browser.js')
+        process: require.resolve('process/browser'),
       },
-      alias: {
-        'process/browser': require.resolve('process/browser.js')
-      }
     },
 
     module: {
@@ -135,18 +132,10 @@ module.exports = (env, argv) => {
         {
           test: /\.(ts|tsx)$/,
           exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: [
-                '@babel/preset-react',
-                '@babel/preset-typescript',
-              ],
-            },
-          },
+          use: 'babel-loader',
         },
         {
-          test: /\.css$/i,
+          test: /\.css$/,
           use: ['style-loader', 'css-loader'],
         },
         {
@@ -159,14 +148,12 @@ module.exports = (env, argv) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './public/index.html',
-        inject: 'body',
       }),
 
       new CopyPlugin({
         patterns: [
           {
-            from: path.resolve(__dirname, 'public'),
-            to: path.resolve(__dirname, 'dist'),
+            from: 'public',
             globOptions: {
               ignore: ['**/index.html'],
             },
@@ -175,15 +162,15 @@ module.exports = (env, argv) => {
       }),
 
       new webpack.ProvidePlugin({
-        process: 'process/browser.js',
+        process: 'process/browser',
       }),
 
       new webpack.DefinePlugin({
+        'process.env.VITE_SUPABASE_URL': JSON.stringify(process.env.VITE_SUPABASE_URL),
+        'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(process.env.VITE_SUPABASE_ANON_KEY),
         'process.env.NODE_ENV': JSON.stringify(
           isProduction ? 'production' : 'development'
         ),
-        'process.env.SUPABASE_URL': JSON.stringify(process.env.SUPABASE_URL),
-        'process.env.SUPABASE_ANON_KEY': JSON.stringify(process.env.SUPABASE_ANON_KEY),
       }),
     ],
 
@@ -191,13 +178,10 @@ module.exports = (env, argv) => {
 
     devServer: {
       historyApiFallback: true,
-      compress: true,
       port: 3000,
-      hot: true,
       open: true,
-      static: {
-        directory: path.join(__dirname, 'public'),
-      },
+      hot: true,
+      static: './public',
     },
   };
 };
