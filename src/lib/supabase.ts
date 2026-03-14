@@ -26,15 +26,15 @@
 // };
 import { createClient } from '@supabase/supabase-js';
 
-// ✅ استخدم process.env بدلاً من import.meta.env
-const supabaseUrl = process.env.VITE_SUPABASE_URL as string;
-const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY as string;
+const supabaseUrl = "https://tixxvcxcrgxscmprldmi.supabase.co";
+
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpeHh2Y3hjcmd4c2NtcHJsZG1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzA5MzksImV4cCI6MjA2OTA0NjkzOX0.bhWFkJAMPAnEf9c1rRjEbyYG4XjQnOIP2dsVVeK_H3U";
 
 export const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
     autoRefreshToken: false,
-    persistSession: false,
-  },
+    persistSession: false
+  }
 });
 
 export const ensureTablesExist = async () => {

@@ -98,8 +98,6 @@
 //     },
 //   };
 // };
-require('dotenv').config();
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
@@ -122,10 +120,6 @@ module.exports = (env, argv) => {
 
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.jsx', '.mjs'],
-      alias: {
-        'react-router-dom': path.resolve(__dirname, 'node_modules/react-router-dom/dist/index.js'),
-        'react-router': path.resolve(__dirname, 'node_modules/react-router/dist/index.js'),
-      },
       fallback: {
         process: require.resolve('process/browser.js'),
       },
@@ -175,14 +169,6 @@ module.exports = (env, argv) => {
 
       new webpack.ProvidePlugin({
         process: ['process/browser.js', 'default'],
-      }),
-
-      new webpack.DefinePlugin({
-        'process.env.VITE_SUPABASE_URL': JSON.stringify(process.env.VITE_SUPABASE_URL),
-        'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(process.env.VITE_SUPABASE_ANON_KEY),
-        'process.env.NODE_ENV': JSON.stringify(
-          isProduction ? 'production' : 'development'
-        ),
       }),
     ],
 
