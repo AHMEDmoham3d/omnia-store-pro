@@ -121,9 +121,13 @@ module.exports = (env, argv) => {
     mode: isProduction ? 'production' : 'development',
 
     resolve: {
-      extensions: ['.tsx', '.ts', '.js', '.jsx'],
+      extensions: ['.tsx', '.ts', '.js', '.jsx', '.mjs'],
+      alias: {
+        'react-router-dom': path.resolve(__dirname, 'node_modules/react-router-dom/dist/index.js'),
+        'react-router': path.resolve(__dirname, 'node_modules/react-router/dist/index.js'),
+      },
       fallback: {
-        process: require.resolve('process/browser'),
+        process: require.resolve('process/browser.js'),
       },
     },
 
@@ -170,7 +174,7 @@ module.exports = (env, argv) => {
       }),
 
       new webpack.ProvidePlugin({
-        process: 'process/browser',
+        process: ['process/browser.js', 'default'],
       }),
 
       new webpack.DefinePlugin({
@@ -189,7 +193,9 @@ module.exports = (env, argv) => {
       port: 3000,
       open: true,
       hot: true,
-      static: './public',
+      static: {
+        directory: path.join(__dirname, 'public'),
+      },
     },
   };
 };
