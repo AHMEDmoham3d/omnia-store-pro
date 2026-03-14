@@ -4,17 +4,17 @@ export const products: Product[] = [
   {
     id: 'Palo Santo',
     name: 'Palo Santo',
-    description: `It is a sacred wood that has been used for centuries in purification and meditation rituals in South America. Spiritual healers have used it for thousands of years to cleanse energy during ceremonies. Its scent is warm and woody with a light touch of sweetness and citrus.
+    description: `خشب مقدس يُستخدم منذ قرون في طقوس التطهير والتأمل في أمريكا الجنوبية. الشافون الروحانيون استخدموه لآلاف السنين لتنقية الطاقة في الطقوس. رائحته دافئة خشبية بلمسة حلاوة وحمضيات.
 
 المميزات:
-• Warm, woody scent with a citrus touch
-  رائحة دافئة وخشبية مع لمسة حلوة من الحمضيات
-• Used for energy purification in rituals
-  يُستخدم لتنقية الطاقة السلبية في الطقوس
-• Ideal for meditation and spiritual cleansing
-  مثالي لجلسات التأمل وطقوس التطهير الروحاني
-• Used by spiritual healers
-  يستخدم منذ آلاف السنين للمعالجة الروحانية`,
+• Warm, woody scent with citrus touch
+  رائحة دافئة خشبية مع لمسة حمضيات
+• Used for energy purification
+  لتنقية الطاقة في الطقوس
+• Ideal for meditation & spiritual cleansing
+  مثالي للتأمل والتطهير الروحاني
+• Traditional spiritual healers tool
+  أداة الشافين الروحانيين من آلاف السنين`,
     price: 300,
     image: '/incense1.jpeg,/incense2.jpeg,/incense3.jpeg',
     category: 'incense',
@@ -22,17 +22,17 @@ export const products: Product[] = [
   {
     id: 'Sage incense',
     name: 'Sage Sandalwood',
-    description: `Sage has been used for centuries in purification rituals and energy cleansing. Its scent is strong, herbal, and refreshing, helping to release heavy energies and restore balance to the space and the aura.
+    description: `السايج يُستخدم منذ قرون في طقوس التطهير وتنقية الطاقة. رائحته قوية عشبية منعشة تساعد في تحرير الطاقات الثقيلة واستعادة التوازن للمكان والهالة.
 
 المميزات:
-• Strong, herbal and refreshing scent
-  رائحة عشبية قوية ومنعشة تنقي الجو
-• Helps release heavy energies
-  يساعد في تحرير الطاقات السلبية من المكان
-• Restores balance to space and aura
-  يستعيد التوازن للطاقة في المكان والحقل
-• Ideal for purification rituals
-  مثالي لطقوس التطهير والتنقية الروحانية`,
+• Strong herbal refreshing scent
+  رائحة عشبية قوية منعشة تنقي الجو
+• Releases heavy energies
+  تحرير الطاقات السلبية من المكان
+• Restores space & aura balance
+  استعادة التوازن للمكان والهالة
+• Perfect for purification rituals
+  مثالي لطقوس التطهير الروحاني`,
     price: 400,
     image: '/Sageincense2.jpeg,/Sageincense1.jpeg',
     category: 'incense',
@@ -94,25 +94,25 @@ export const products: Product[] = [
   {
     id: 'أوركل أسماء الله الحسن',
     name: 'أوركل أسماء الله الحسنى',
-    description: `مش مجرد كروت... هي أداة ذكر وتجربة روحانية. الكروت مصممة برؤية مدروسة تجمع بين البعد الروحاني وعلم الأرقام.
+    description: `أوراكل أسماء الله الحسنى - أداة ذكر وتجربة روحانية عميقة. 99 بطاقة تجمع الروحانية وعلم الأرقام مع شرح كامل ودليل استخدام.
 
 المحتوى:
-• Complete names of God cards
-  99 بطاقة بأسماء الله الحسنى
-• Explanation of each name's meaning
-  شرح مفصل لمعنى كل اسم الله عز وجل
-• Suggested number for repeating each name
-  عدد مقترح لكل اسم للذكر والترديد
-• How to use the cards
-  دليل شامل لاستخدام الكروت في التأمل
+• 99 names of God cards
+  99 بطاقة أسماء الله الحسنى
+• Meaning of each name explained
+  شرح مفصل معنى كل اسم
+• Repetition numbers suggested
+  عدد الترديد المقترح لكل اسم
+• Complete usage guide
+  دليل شامل للتأمل والاستخدام
 
-المناسبة:
-• Meditation sessions
-  مثالية لجلسات التأمل اليومي
-• Cosmic messages in difficult situations
-  استقبل رسائل إلهية في المواقف الصعبة
-• Spiritual gift for a loved one
-  هدية مميزة وراقية للأصدقاء`,
+المناسب لـ:
+• Daily meditation
+  جلسات التأمل اليومية
+• Guidance in difficult times
+  رسائل إلهية في المواقف الصعبة
+• Spiritual gift
+  هدية روحانية راقية`,
     price: 1500,
     image: '/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
     category: 'cards',
@@ -120,25 +120,15 @@ export const products: Product[] = [
   {
     id: 'Game تشافي',
     name: 'Game تشافي',
-    description: `تشافي جامع - 56 كارت للتأمل. مجموعة بطاقات تحتوي على أسئلة عميقة للتأمل.
+    description: `لعبة تشافي - 56 كارت أسئلة تأمل عميق عن الذات، الطفولة، العائلة والأدوار الحياتية.
 
-الأسئلة تتناول:
-• Yourself and your identity
-  أسئلة للتعمق في معرفة نفسك الحقيقية
-• Your childhood and memories
-  أسئلة عن طفولتك وذكرياتك المؤثرة
-• Your family and relationships
-  أسئلة عن عائلتك والعلاقات المهمة
-• The roles you play in your life
-  أسئلة عن أدوارك ومدى رضاك عنها
-
-لمن هذا المنتج?
-• Anyone wanting to know themselves deeper
-  مثالي لمن يريد استكشاف أعماقه
-• Therapists and coaches in their sessions
-  أداة احترافية للمعالجين
-• Friends in awareness sessions
-  ممتعة ومفيدة للمجموعات الروحانية`,
+💥 مناسب لـ:
+• التعمق في معرفة الذات
+  للي عايز يتعرف على نفسه أكتر
+• الكوتش في الجلسات والورش
+  أداة قوية للكوتش والمعالجين
+• الأصحاب في جلسات وعي
+  لعب جماعي للقعدات الواعية`,
     price: 780,
     image: '/Game1.jpeg,/Game2.jpeg,/Game3.jpeg',
     category: 'cards',
@@ -146,49 +136,27 @@ export const products: Product[] = [
   {
     id: 'Jar تشافي',
     name: 'Jar تشافي',
-    description: `تشافي Jar - 73 كارت للشفاء النفسي. مجموعة بطاقات تحتوي على توكيدات وتمارين للشفاء الداخلي.
+    description: `جر تشافي - 73 كارت توكيدات وتمارين شفاء للتوازن النفسي وشفاء الطفل الداخلي. برنامج 40 يوم.
 
-مدة الاستخدام:
-• 40-day healing program
-  برنامج مدروس لـ 40 يوم للشفاء التام
-• Regular daily practice
-  تمارين وتوكيدات يومية منتظمة
-
-ماذا ستكتسب?
-• Healing from childhood hurts
-  شفاء من جراح الطفولة والماضي
-• Making peace with your past
-  مساعدة في التصالح مع الماضي
-• Psychological balance
-  تحقيق التوازن النفسي والعاطفي
-• Developing self-awareness
-  تطوير الوعي الذاتي والنمو الشخصي`,
+💥 مناسب لـ:
+• عمل على الذات والطفولة
+  كل اللي عايز يتصالح مع طفولته
+• الشفاء النفسي والتوازن
+  توكيدات يومية للشفاء العاطفي`,
     price: 1000,
     image: '/Jar1.jpeg,/Jar2.jpeg,/Jar3.jpeg,/Jar4.jpeg',
     category: 'cards',
   },
   {
     id: 'Jar Family Constellation',
-    name: 'Jar Family Constellation',
-    description: `تشافي بتوكيدات Family Constellation. برنامج شفاء متكامل للنظام العائلي.
+    name: 'تشافي بتوكيدات الفاميلي كونستليشن',
+    description: `تشافي توكيدات الفاميلي كونستليشن - 55 تحدي، 165 توكيد في 55 كارت + رسم نظام العائلة. شفاء الصدمات الوراثية.
 
-المحتوى:
-• 55 psychological challenges
-  55 تحدي للعمل على نفسك
-• 165 affirmations on 55 cards
-  165 توكيد إيجابي للشفاء
-• Family system diagram
-  رسم تفاعلي للنظام العائلي
-
-الهدف:
-• Healing inherited traumas
-  شفاء من الصدمات المنقولة عبر الأجيال
-• Dealing with family patterns
-  فهم والتعامل مع الأنماط الموروثة
-• Breaking free from limited programs
-  التحرر من البرامج والمعتقدات المحدودة
-• Reclaiming personal power
-  استعادة قوتك الشخصية الكاملة`,
+♡ مناسب لـ:
+• التحديات العائلية الوراثية
+  اللي عايز يشفي صدمات العائلة
+• ممارسي الفاميلي كونستليشن
+  أداة للمعالجين والكلاينتس`,
     price: 1500,
     image: '/conf1.jpeg,/conf2.jpeg,/conf3.jpeg,/con4.jpeg',
     category: 'cards',

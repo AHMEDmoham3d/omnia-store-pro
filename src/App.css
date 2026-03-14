@@ -796,10 +796,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-description {
-  font-size: 15px;
-  color: var(--text-gray);
-  margin-bottom: 20px;
-  line-height: 1.7;
+  font-size: 17px;
+  color: var(--text-light);
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
 .product-footer {
@@ -1030,9 +1031,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-description {
-  color: var(--text-gray);
-  line-height: 1.7;
+  color: var(--text-light);
+  line-height: 1.8;
   margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .form-group {
@@ -1358,6 +1361,10 @@ table tr:hover td {
     font-size: 16px;
   }
   
+  .product-description {
+    font-size: 16px;
+  }
+  
   .products-grid {
     grid-template-columns: 1fr;
   }
@@ -1368,6 +1375,10 @@ table tr:hover td {
   
   .modal-content {
     padding: 24px;
+  }
+  
+  .modal-description {
+    font-size: 15px;
   }
 }
 

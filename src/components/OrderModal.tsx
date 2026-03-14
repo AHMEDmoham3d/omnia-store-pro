@@ -133,7 +133,7 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
             <h2 className="modal-title">{product.name}</h2>
             <div className="modal-price">{product.price} L.E</div>
           </div>
-          <p className="modal-description">{product.description}</p>
+          <p className="modal-description" dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br>') }} />
 
           {success && (
             <div className="success-message">
