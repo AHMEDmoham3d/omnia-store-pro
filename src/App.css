@@ -796,11 +796,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-description {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--text-light);
   margin-bottom: 24px;
-  line-height: 1.8;
-  font-weight: 600;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.product-description br + br {
+  display: none;
+}
+
+.product-description::marker,
+.product-description li {
+  font-size: 18px !important;
+  font-weight: 600 !important;
 }
 
 .product-footer {
