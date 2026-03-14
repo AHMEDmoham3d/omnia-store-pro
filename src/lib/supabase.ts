@@ -26,7 +26,26 @@
 // };
 import { createClient } from '@supabase/supabase-js';
 
+// ✅ استخدم process.env بدلاً من import.meta.env
 const supabaseUrl = process.env.VITE_SUPABASE_URL as string;
 const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY as string;
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    autoRefreshToken: false,
+    persistSession: false,
+  },
+});
+
+export const ensureTablesExist = async () => {
+  const client = supabase;
+
+  const { error } = await client.from('orders').select('id').limit(1);
+
+  if (error) {
+    console.log('Table check result:', error.message);
+    return false;
+  }
+
+  return true;
+};
