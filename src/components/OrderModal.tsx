@@ -211,14 +211,14 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="notes">
-                ملاحظات *
+                notes *
               </label>
               <input
                 type="text"
                 id="notes"
                 name="notes"
                 className="form-input"
-                placeholder="اكتب أي ملاحظات..."
+                placeholder="Write any notes..."
                 value={formData.notes}
                 onChange={handleChange}
                 required
