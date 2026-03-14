@@ -800,7 +800,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-light);
   margin-bottom: 24px;
   line-height: 1.8;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .product-footer {
@@ -1035,7 +1035,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.8;
   margin-bottom: 32px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .form-group {
@@ -1363,6 +1363,7 @@ table tr:hover td {
   
   .product-description {
     font-size: 16px;
+    font-weight: 600;
   }
   
   .products-grid {
@@ -1379,6 +1380,7 @@ table tr:hover td {
   
   .modal-description {
     font-size: 15px;
+    font-weight: 600;
   }
 }
 
