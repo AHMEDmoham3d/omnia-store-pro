@@ -8,7 +8,7 @@ export const products: Product[] = [
 It is a sacred wood that has been used for centuries in purification and meditation rituals in South America.
 Spiritual healers have used it for thousands of years to cleanse energy during ceremonies. 
 Its scent is warm and woody with a light touch of sweetness and citrus
-  `
+  `,
     price: 300,
     image: '/incense1.jpeg,/incense2.jpeg,/incense3.jpeg',
     category: 'incense',
