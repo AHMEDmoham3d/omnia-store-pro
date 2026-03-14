@@ -796,11 +796,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-description {
-  font-size: 16px;
+  font-size: 15px !important;
   color: var(--text-light);
   margin-bottom: 24px;
-  line-height: 1.6;
-  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .product-description br + br {
@@ -809,8 +809,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-description::marker,
 .product-description li {
-  font-size: 18px !important;
-  font-weight: 600 !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: var(--accent-gold) !important;
 }
 
 .product-footer {
