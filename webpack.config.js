@@ -167,8 +167,12 @@ module.exports = (env, argv) => {
         ],
       }),
 
-      new webpack.ProvidePlugin({
+new webpack.ProvidePlugin({
         process: ['process/browser.js', 'default'],
+      }),
+      new webpack.DefinePlugin({
+        'process.env.VITE_SUPABASE_URL': JSON.stringify(process.env.VITE_SUPABASE_URL || 'https://tixxvcxcrgxscmprldmi.supabase.co'),
+        'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(process.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpeHh2Y3hjcmd4c2NtcHJsZG1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzA5MzksImV4cCI6MjA2OTA0NjkzOX0.bhWFkJAMPAnEf9c1rRjEbyYG4XjQnOIP2dsVVeK_H3U'),
       }),
     ],
 

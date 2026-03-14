@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-// Use env vars (injected by webpack.config.js)
-const supabaseUrl = process.env.VITE_SUPABASE_URL || '';
-const anonKey = process.env.VITE_SUPABASE_ANON_KEY || '';
+import { supabase } from '../lib/supabase';
 
 interface Order {
   id: number;
@@ -44,42 +41,20 @@ export const Admin: React.FC = () => {
     setError(null);
     
     try {
-      const response = await fetch(
-        `${supabaseUrl}/rest/v1/orders?select=*&order=created_at.desc`,
-        {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'apikey': anonKey,
-            'Authorization': `Bearer ${anonKey}`,
-          }
-        }
-      );
-      
-      console.log('Response status:', response.status);
-      console.log('Response ok:', response.ok);
-      
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Error response:', errorText);
-        setError(`Error: ${response.status} - ${errorText}`);
+      const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) {
+        console.error('Supabase error:', error);
+        setError(`Error: ${error.message}`);
         setLoading(false);
         return;
       }
       
-      const data = await response.json();
       console.log('Fetched data:', data);
-      console.log('Data type:', typeof data);
-      console.log('Is array:', Array.isArray(data));
-      
-      if (Array.isArray(data)) {
-        setOrders(data);
-      } else if (data && typeof data === 'object') {
-        const ordersArray = data.data || data.orders || Object.values(data).flat();
-        setOrders(Array.isArray(ordersArray) ? ordersArray : []);
-      } else {
-        setOrders([]);
-      }
+      setOrders(data || []);
     } catch (err) {
       console.error('Fetch error:', err);
       setError(err instanceof Error ? err.message : 'Unknown error occurred');
