@@ -7,13 +7,9 @@ export const products: Product[] = [
     description: `خشب مقدس يُستخدم منذ قرون في طقوس التطهير والتأمل في أمريكا الجنوبية. الشافون الروحانيون استخدموه لآلاف السنين لتنقية الطاقة في الطقوس. رائحته دافئة خشبية بلمسة حلاوة وحمضيات.
 
 المميزات:
-• Warm, woody scent with citrus touch
   رائحة دافئة خشبية مع لمسة حمضيات
-• Used for energy purification
   لتنقية الطاقة في الطقوس
-• Ideal for meditation & spiritual cleansing
   مثالي للتأمل والتطهير الروحاني
-• Traditional spiritual healers tool
   أداة الشافين الروحانيين من آلاف السنين`,
     price: 300,
     image: '/incense1.jpeg,/incense2.jpeg,/incense3.jpeg',
@@ -25,13 +21,9 @@ export const products: Product[] = [
     description: `السايج يُستخدم منذ قرون في طقوس التطهير وتنقية الطاقة. رائحته قوية عشبية منعشة تساعد في تحرير الطاقات الثقيلة واستعادة التوازن للمكان والهالة.
 
 المميزات:
-• Strong herbal refreshing scent
   رائحة عشبية قوية منعشة تنقي الجو
-• Releases heavy energies
   تحرير الطاقات السلبية من المكان
-• Restores space & aura balance
   استعادة التوازن للمكان والهالة
-• Perfect for purification rituals
   مثالي لطقوس التطهير الروحاني`,
     price: 400,
     image: '/Sageincense2.jpeg,/Sageincense1.jpeg',
@@ -97,21 +89,14 @@ export const products: Product[] = [
     description: `أوراكل أسماء الله الحسنى - أداة ذكر وتجربة روحانية عميقة. 99 بطاقة تجمع الروحانية وعلم الأرقام مع شرح كامل ودليل استخدام.
 
 المحتوى:
-• 99 names of God cards
   99 بطاقة أسماء الله الحسنى
-• Meaning of each name explained
   شرح مفصل معنى كل اسم
-• Repetition numbers suggested
   عدد الترديد المقترح لكل اسم
-• Complete usage guide
   دليل شامل للتأمل والاستخدام
 
 المناسب لـ:
-• Daily meditation
   جلسات التأمل اليومية
-• Guidance in difficult times
   رسائل إلهية في المواقف الصعبة
-• Spiritual gift
   هدية روحانية راقية`,
     price: 1500,
     image: '/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
