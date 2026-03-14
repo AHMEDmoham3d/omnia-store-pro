@@ -22,6 +22,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
     setCurrentImageIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const isArabic = /تشافي|أوركل|أسماء الله الحسن/.test(product.name) || /أوركل/.test(product.id);
+
   return (
     <div className="product-card">
       <div className="product-image-container" onClick={onClick}>
@@ -69,9 +71,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
       <div className="product-content">
         <div className="product-category">{product.category}</div>
         <h3 className="product-title">{product.name}</h3>
-        <p className="product-description" dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br>') }} />
+        <p 
+          className="product-description" 
+          style={{
+            direction: isArabic ? 'rtl' : 'ltr',
+            textAlign: isArabic ? 'right' : 'left'
+          }}
+          dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br>') }} 
+        />
         <div className="product-footer">
-<div className="product-price">{product.price} L.E</div>
+          <div className="product-price">{product.price} L.E</div>
           <button className="product-btn" onClick={onClick}>
            Order now
           </button>
