@@ -28,7 +28,8 @@ import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = "https://tixxvcxcrgxscmprldmi.supabase.co";
 
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpeHh2Y3hjcmd4c2NtcHJsZG1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzA5MzksImV4cCI6MjA2OTA0NjkzOX0.bhWFkJAMPAnEf9c1rRjEbyYG4XjQnOIP2dsVVeK_H3U";
+const supabaseKey =
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpeHh2Y3hjcmd4c2NtcHJsZG1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM0NzA5MzksImV4cCI6MjA2OTA0NjkzOX0.bhWFkJAMPAnEf9c1rRjEbyYG4XjQnOIP2dsVVeK_H3U";
 
 export const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
@@ -38,9 +39,10 @@ export const supabase = createClient(supabaseUrl, supabaseKey, {
 });
 
 export const ensureTablesExist = async () => {
-  const client = supabase;
-
-  const { error } = await client.from('orders').select('id').limit(1);
+  const { error } = await supabase
+    .from('orders')
+    .select('id')
+    .limit(1);
 
   if (error) {
     console.log('Table check result:', error.message);
