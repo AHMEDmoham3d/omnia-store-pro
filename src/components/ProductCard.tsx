@@ -25,7 +25,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
   const isArabic = /تشافي|أوركل|أسماء الله الحسن/.test(product.name) || /أوركل/.test(product.id);
 
   return (
-<div className={`product-card ${isArabic ? 'arabic-card' : ''}`}>
+<div className="product-card">
       <div className="product-image-container" onClick={onClick}>
         <img
           src={images[currentImageIndex]}
@@ -68,7 +68,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
           </>
         )}
       </div>
-<div className={`product-content ${isArabic ? 'arabic-content' : ''}`}>
+<div className="product-content">
         <div className="product-category">{product.category}</div>
         <h3 className="product-title">{product.name}</h3>
         <p 

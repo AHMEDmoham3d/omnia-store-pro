@@ -42,59 +42,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* RTL Arabic Descriptions - Ultra Strict */
-/* RTL Arabic Descriptions - Ultra Strict - ENHANCED FOR BULLETS */
+/* RTL Arabic Descriptions - Ultra Strict */
 .product-description.arabic {
   direction: rtl !important;
   unicode-bidi: embed !important;
   text-align: end !important;
-  line-height: 1.8 !important; /* Increased for readability */
+  line-height: 1.6 !important;
   margin: 1em 0 !important;
-  padding: 0.5em 0 0.5em 1em !important; /* Right padding for bullet space since RTL */
+  padding: 0 !important;
   text-indent: 0 !important;
   word-break: keep-all !important;
   overflow-wrap: break-word !important;
   hyphens: none !important;
-  font-size: 0.95em !important;
 }
 
 .product-description.arabic br {
   display: block !important;
-  height: 1.4em !important; /* Better line spacing */
-  margin: 0 !important;
-}
-
-/* New: Arabic bullet specific - align bullets to right edge */
-.product-description.arabic > *:first-child,
-.product-description.arabic li,
-.product-description.arabic p {
-  margin: 0 0 0.5em 0 !important;
-  padding-right: 0 !important;
-  text-align: end !important;
-  position: relative !important;
-}
-
-/* Ensure bullets (•) start from right edge */
-.product-description.arabic::before {
-  content: '' !important;
-  display: block !important;
-  width: 1.2em !important;
   height: 1.2em !important;
-  margin-right: -1.2em !important;
-  float: right !important;
+  margin: 0 !important;
 }
 
 .product-description {
   line-height: 1.5;
   margin: 0.5em 0;
   font-size: 0.9em;
-  padding: 0;
 }
 
 .modal-description.arabic {
   direction: rtl !important;
   unicode-bidi: embed !important;
   text-align: end !important;
-  line-height: 1.8 !important;
+  line-height: 1.6 !important;
   padding: 0.5em 0 !important;
 }
 
@@ -102,24 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 .product-description.arabic > * {
   margin-right: 0 !important;
   margin-left: 0 !important;
-}
-
-/* NEW: Arabic card full RTL containers */
-.product-card.arabic-card {
-  direction: rtl !important;
-}
-
-.product-content.arabic-content {
-  direction: rtl !important;
-  text-align: right !important;
-}
-
-/* Bullet styling for RTL - ensure no left alignment */
-.product-description.arabic > * {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 1em !important; /* Bullet indent from right */
 }
 
 /* Full existing styles below - all preserved */
