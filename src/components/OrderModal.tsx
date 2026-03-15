@@ -8,7 +8,6 @@ interface OrderModalProps {
 }
 
 export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
-  // Split the image string by comma to get multiple images
   const images = product.image.split(',').map(img => img.trim());
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const hasMultipleImages = images.length > 1;
@@ -24,19 +23,16 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  // Handle previous image
   const handlePrevImage = (e: React.MouseEvent) => {
     e.stopPropagation();
     setCurrentImageIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  // Handle next image
   const handleNextImage = (e: React.MouseEvent) => {
     e.stopPropagation();
     setCurrentImageIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  // إرسال الأوردر
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -77,6 +73,8 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     }));
   };
 
+  const isArabic = /تشافي|أوركل|أسماء الله الحسن/.test(product.name) || /أوركل/.test(product.id);
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal modal-order" onClick={(e) => e.stopPropagation()}>
@@ -84,7 +82,6 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
           ×
         </button>
         
-        {/* Product Image Gallery */}
         <div className="modal-image-gallery">
           <img
             src={images[currentImageIndex]}
@@ -95,7 +92,6 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
           
           {hasMultipleImages && (
             <>
-              {/* Navigation Arrows */}
               <button 
                 className="modal-image-nav-btn modal-image-nav-prev" 
                 onClick={handlePrevImage}
@@ -111,7 +107,6 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
                 ›
               </button>
               
-              {/* Image Dots Indicator */}
               <div className="modal-image-dots">
                 {images.map((_, index) => (
                   <span 
@@ -129,11 +124,11 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
         </div>
 
         <div className="modal-content">
-<div className="modal-header">
+          <div className="modal-header">
             <h2 className="modal-title">{product.name}</h2>
             <div className="modal-price">{product.price} L.E</div>
           </div>
-          <p className="modal-description" dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br>') }} />
+          <p className={`modal-description ${isArabic ? 'arabic' : ''}`} dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br>') }} />
 
           {success && (
             <div className="success-message">
@@ -239,3 +234,4 @@ export const OrderModal: React.FC<OrderModalProps> = ({ product, onClose }) => {
     </div>
   );
 };
+

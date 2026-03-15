@@ -1,9 +1,18 @@
-# Task: Reformat Arabic product descriptions to RTL bullets
+# Arabic Description RTL Bullets Plan
 
-## Steps:
-- [x] Step 1: Edit description for 'أوركل أسماء الله الحسن' - add dir="rtl" and consistent bullets.
-- [x] Step 2: Edit description for 'Game تشافي' - add dir="rtl" and cleanup.
-- [x] Step 3: Edit description for 'Jar تشافي' - add dir="rtl" and cleanup.
-- [x] Step 4: Edit description for 'Jar Family Constellation' - bullet opening paragraph + dir="rtl".
-- [ ] Step 5: Verify changes and complete task.
+## Status: Approved & In Progress
+
+**Step 1: [DONE] Analyze files** - products.ts (data), ProductCard.tsx (render), OrderModal.tsx (modal), App.css (styles)
+
+**Step 2: [DONE] Update src/App.css** - Added RTL styles for .product-description.arabic & .modal-description
+
+**Step 3: [DONE] Edit src/components/ProductCard.tsx** - Added 'arabic' className to description
+
+**Step 4: [DONE] Edit src/components/OrderModal.tsx** - Added RTL class to .modal-description
+
+**Step 5: [PENDING] Test** - Run dev server, check cards/modal RTL bullets from right edge
+
+**Step 5: [PENDING] Test** - Run dev server, check cards/modal RTL bullets from right edge
+
+**Step 6: [PENDING] Complete** - attempt_completion
 

@@ -14,12 +14,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
 
   const handlePrevImage = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setCurrentImageIndex(prev => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   const handleNextImage = (e: React.MouseEvent) => {
     e.stopPropagation();
-    setCurrentImageIndex(prev => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
   const isArabic = /تشافي|أوركل|أسماء الله الحسن/.test(product.name) || /أوركل/.test(product.id);
@@ -72,7 +72,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
         <div className="product-category">{product.category}</div>
         <h3 className="product-title">{product.name}</h3>
         <p 
-          className="product-description" 
+          className={`product-description ${isArabic ? 'arabic' : ''}`}
           style={{
             direction: isArabic ? 'rtl' : 'ltr',
             textAlign: isArabic ? 'right' : 'left'
@@ -89,3 +89,4 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) =>
     </div>
   );
 };
+

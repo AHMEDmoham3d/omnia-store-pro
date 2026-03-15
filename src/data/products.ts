@@ -82,7 +82,7 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'أوركل أسماء الله الحسن',
     name: 'أوركل أسماء الله الحسنى',
-    description: `dir="rtl"
+    description: `
 • مش مجرد كروت … 
 • هى أداه ذكر وتجربه روحانيه هتعيشها مع كل أسم من أسماء الله الحسنى هتساعدك على إعاده التوازن الداخلى والسكينه.
 
@@ -105,11 +105,12 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Game تشافي',
     name: 'Game تشافي',
-    description: `dir="rtl"
+    description: `
 • يشمل ٥٦ كارت به اسأله للتاءمل عن نفسك و طفولتك و عيلتك و الأدوار الي بتلعبها في حياتك.
 • مناسبه ليك لو عايز تتعرف على نفسك بشكل اعمق.
 • مناسبه للكوتش يستخدمها في جلساته و الورش الي بيعملها .
 • مناسبه للأصحاب يلعبوها في قعده وعي.`,
+
 
     price: 780,
     image: '/Game1.jpeg,/Game2.jpeg,/Game3.jpeg',
@@ -118,9 +119,10 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Jar تشافي',
     name: 'Jar تشافي',
-    description: `dir="rtl"
+    description: `
 • يشمل ٧٣ كارت به توكيدات و تمارين شفاءيه للتوازن النفسي و شفاء الطفل بداخلنا نعملها لمده ٤٠ يوم.
 • مناسبه لكل شخص عايز يشتغل على نفسه و طفولته و يتصالح معاها.`,
+
 
     price: 1000,
     image: '/Jar1.jpeg,/Jar2.jpeg,/Jar3.jpeg,/Jar4.jpeg',
@@ -129,13 +131,14 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Jar Family Constellation',
     name: 'تشافي بتوكيدات الفاميلي كونستليشن',
-    description: `dir="rtl"
+    description: `
 • تشمل ٥٥ تحدي ، ١٦٥ توكيد في ٥٥ كارت، و معاهم رسم للنظام العيله بهدف التشافي من الصدمات المنقوله عبر الأجيال. 
 
 • مناسبه لكل شخص عايز يشتغل على التحديات الي مبتدتش معاه و اتنقلتله من عيلته واعي بيها او معندوش فكره عنها.
 
 • مناسبه لكل ممارس الفاميلي كونستليشن في جلساته و مع الكلاينتس بتوعه.
 `,
+
 
     price: 1500,
     image: '/conf1.jpeg,/conf2.jpeg,/conf3.jpeg,/con4.jpeg',
