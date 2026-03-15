@@ -82,13 +82,14 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'أوركل أسماء الله الحسن',
     name: 'أوركل أسماء الله الحسنى',
-    description: `مش مجرد كروت … 
-هى أداه ذكر وتجربه روحانيه هتعيشها مع كل أسم من أسماء الله الحسنى هتساعدك على إعاده التوازن الداخلى والسكينه.
+    description: `dir="rtl"
+• مش مجرد كروت … 
+• هى أداه ذكر وتجربه روحانيه هتعيشها مع كل أسم من أسماء الله الحسنى هتساعدك على إعاده التوازن الداخلى والسكينه.
 
-المجموعه تحتوى على:
+• المجموعه تحتوى على:
 • 🕯️99 كارت  + شرح لمعنى كل اسم + عدد مقترح لترديد الاسم + كيفيه أستخدام الكروت
 
-✨🎁 مناسبة جدا ل :
+• ✨🎁 مناسبة جدا ل :
 
 • جلسات التأمل
 • رسائل كونيه فى موقف صعب او تحدى بتمر به
@@ -96,6 +97,7 @@ Its scent is warm and woody with a light touch of sweetness and citrus
 • 💫يوجد عدد ٢ تصميم مختلفين تقدر تختار المناسب لك   
 
 `,
+
     price: 1500,
     image: '/card9.jpeg,/card8.jpeg,/card5.jpeg,/card3.jpeg,/card2.jpeg,/card1.jpeg',
     category: 'cards',
@@ -103,11 +105,12 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Game تشافي',
     name: 'Game تشافي',
-    description: `
+    description: `dir="rtl"
 • يشمل ٥٦ كارت به اسأله للتاءمل عن نفسك و طفولتك و عيلتك و الأدوار الي بتلعبها في حياتك.
 • مناسبه ليك لو عايز تتعرف على نفسك بشكل اعمق.
 • مناسبه للكوتش يستخدمها في جلساته و الورش الي بيعملها .
 • مناسبه للأصحاب يلعبوها في قعده وعي.`,
+
     price: 780,
     image: '/Game1.jpeg,/Game2.jpeg,/Game3.jpeg',
     category: 'cards',
@@ -115,9 +118,10 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Jar تشافي',
     name: 'Jar تشافي',
-    description: `
+    description: `dir="rtl"
 • يشمل ٧٣ كارت به توكيدات و تمارين شفاءيه للتوازن النفسي و شفاء الطفل بداخلنا نعملها لمده ٤٠ يوم.
 • مناسبه لكل شخص عايز يشتغل على نفسه و طفولته و يتصالح معاها.`,
+
     price: 1000,
     image: '/Jar1.jpeg,/Jar2.jpeg,/Jar3.jpeg,/Jar4.jpeg',
     category: 'cards',
@@ -125,14 +129,14 @@ Its scent is warm and woody with a light touch of sweetness and citrus
   {
     id: 'Jar Family Constellation',
     name: 'تشافي بتوكيدات الفاميلي كونستليشن',
-    description: `
-
-تشمل ٥٥ تحدي ، ١٦٥ توكيد في ٥٥ كارت، و معاهم رسم للنظام العيله بهدف التشافي من الصدمات المنقوله عبر الأجيال. 
+    description: `dir="rtl"
+• تشمل ٥٥ تحدي ، ١٦٥ توكيد في ٥٥ كارت، و معاهم رسم للنظام العيله بهدف التشافي من الصدمات المنقوله عبر الأجيال. 
 
 • مناسبه لكل شخص عايز يشتغل على التحديات الي مبتدتش معاه و اتنقلتله من عيلته واعي بيها او معندوش فكره عنها.
 
 • مناسبه لكل ممارس الفاميلي كونستليشن في جلساته و مع الكلاينتس بتوعه.
 `,
+
     price: 1500,
     image: '/conf1.jpeg,/conf2.jpeg,/conf3.jpeg,/con4.jpeg',
     category: 'cards',
